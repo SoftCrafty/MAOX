@@ -6210,10 +6210,75 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 60px;
 }
 
+.swiper-container {
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  overflow: hidden;
+}
+
 .testimonial-item {
   text-align: center;
 }
 .testimonial-item .quote i {
   color: black;
   font-size: 30px;
+}
+.testimonial-item .ratings-star {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.testimonial-item .ratings-star .rating {
+  font-family: "Outfit", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: black;
+  margin-top: 3px;
+}
+.testimonial-item .testimonial-text p {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #595959;
+  margin-top: 10px;
+}
+.testimonial-item .author .name {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+.testimonial-item .author .title {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.testimonial-authors-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-author-img {
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  border: 3px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.testimonial-author-img.active {
+  border: 3px solid #D9A14C;
 }

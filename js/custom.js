@@ -1,6 +1,57 @@
 (function ($) {
   "use strict";
   $(document).ready(function () {
+
+
+    //MAOX ========================
+    // ---- testimonial slider ------------
+  
+    const authorSlider = new Swiper('.testimonial-authors-slider', {
+     spaceBetween: 2,
+      slidesPerView: 3, 
+      watchSlidesProgress: true,
+     
+  });
+
+  const swiper = new Swiper('.testimonial-slider', {
+    loop: true, // Enables infinite loop
+    autoplay: true,
+    freeMode: true,
+    slidesPerView: 1, 
+    thumbs: {
+      swiper: authorSlider,
+    },
+});
+  
+// Add active border effect when the slide changes
+swiper.on('slideChange', function () {
+  document.querySelectorAll('.testimonial-author-img').forEach(img => {
+      img.style.border = 'none'; 
+  });
+
+  // Get active index and add border
+  const activeIndex = swiper.realIndex;
+  document.querySelectorAll('.testimonial-author-img')[activeIndex].style.border = '3px solid #47CD7D'; 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     /*
        Jquery Mobile Menu
        ============================*/
