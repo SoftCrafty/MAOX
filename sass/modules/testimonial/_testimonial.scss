@@ -1,0 +1,19 @@
+
+.testimonial-wrapper{
+    background-color: $bg-clr;
+    padding: 60px;
+
+    
+}
+
+.testimonial-item{
+    text-align: center;
+
+    .quote{
+        i{
+            color: black;
+            font-size: 30px;
+        }
+    }
+
+}

@@ -5952,3 +5952,268 @@ body.admin-bar .header-menu-area.sticky_menu {
 .widget_service_brochura .button-wrapper .doc:hover {
   background-color: #D9A14C;
 }
+
+.header-menu-area.style-1 {
+  background-color: black;
+}
+.header-menu-area.style-1 .header-menu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 30px 0;
+}
+.header-menu-area.style-1 .menu {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.header-menu-area.style-1 .menu .main-menu ul {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header-menu-area.style-1 .menu .main-menu ul li a {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+.header-menu-area.style-1 .menu .menu-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #47CD7D;
+  color: white;
+}
+
+.banner-section.style-1 {
+  background-color: black;
+  padding: 85px 0 500px;
+}
+.banner-section.style-1 .banner-content {
+  position: relative;
+}
+.banner-section.style-1 .banner-content .banner-title {
+  font-family: "Outfit", serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 110px;
+  color: white;
+}
+.banner-section.style-1 .banner-content .banner-round-desc {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 130px;
+}
+.banner-section.style-1 .banner-content .banner-round-desc .banner-round-text {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  max-width: 374px;
+}
+.banner-section.style-1 .banner-content .banner-img-area {
+  position: absolute;
+  margin-top: 85px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.banner-section.style-1 .banner-content .banner-img-area img {
+  border-radius: 10px;
+}
+.banner-section.style-1 .banner-content .banner-rating-card {
+  padding: 25px;
+  background-color: #47CD7D;
+  width: fit-content;
+  position: absolute;
+  border-radius: 0 0 0 10px;
+  left: 0;
+  bottom: 0;
+}
+.banner-section.style-1 .banner-content .banner-rating-card .rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.banner-section.style-1 .banner-content .banner-rating-card .rating-stars .rating {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+.banner-section.style-1 .banner-content .banner-rating-card .rating-card-title {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin: 10px 0;
+}
+.banner-section.style-1 .banner-content .banner-rating-card .rating-card-desc {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.mt-325 {
+  margin-top: 325px;
+}
+
+.sec-title {
+  text-transform: uppercase;
+}
+.sec-title.style-1 h4 {
+  font-family: "Outfit", serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #1A1A1A;
+  text-align: center;
+  position: relative;
+  margin-bottom: 60px;
+}
+.sec-title.style-1 h4::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 1px;
+  width: 40%;
+  background-color: #E2E2E2;
+}
+.sec-title.style-1 h4::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 40%;
+  background-color: #E2E2E2;
+}
+.sec-title.style-2 h4 {
+  font-family: "Urbanist", serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #595959;
+  position: relative;
+  letter-spacing: 1.62px;
+  width: fit-content;
+}
+.sec-title.style-2 h4::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 110%;
+  height: 1px;
+  width: 100px;
+  background-color: #47CD7D;
+}
+
+.section-heading-wrapper .section-heading {
+  margin-bottom: 60px;
+}
+.section-heading-wrapper .section-heading.style-1 h2 {
+  font-family: "Outfit", serif;
+  font-weight: 300;
+  font-size: 70px;
+  line-height: 90px;
+}
+
+.row-gap {
+  row-gap: 90px;
+}
+
+.client {
+  text-align: center;
+}
+
+.awards h3 {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 65px;
+  color: black;
+}
+.awards p {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+}
+
+.about-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-card {
+  margin-left: 30px;
+}
+.about-card h4 {
+  font-family: "Outfit", serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  color: black;
+}
+.about-card p {
+  font-family: "Urbanist", serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #595959;
+  margin-top: 15px;
+}
+
+.read-more-btn {
+  font-family: "Outfit", serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  padding: 15px 20px;
+  border: 1px solid black;
+  border-radius: 999px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.read-more-btn i {
+  margin-left: 5px;
+  rotate: 45deg;
+  transition: 0.3s all;
+}
+.read-more-btn:hover {
+  color: #47CD7D;
+}
+.read-more-btn:hover i {
+  rotate: 0deg;
+}
+
+.testimonial-wrapper {
+  background-color: #F2F2F2;
+  padding: 60px;
+}
+
+.testimonial-item {
+  text-align: center;
+}
+.testimonial-item .quote i {
+  color: black;
+  font-size: 30px;
+}

@@ -1,0 +1,89 @@
+
+.banner-section{
+    &.style-1{
+        background-color: black;
+        padding: 85px 0 500px;
+
+        .banner-content{
+            position: relative;
+
+            .banner-title{
+                font-family: $outfit-font;
+                font-size: 90px;
+                font-weight: 700;
+                line-height: 110px;
+                color: white;
+            }
+
+            .banner-round-desc{
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 130px;
+
+                .banner-round-text{
+                    font-family: $outfit-font;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: white;
+                    max-width: 374px;
+                }
+            }
+
+            .banner-img-area{
+                position: absolute;
+                margin-top: 85px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                img{
+                    border-radius: 10px;
+                }
+            }
+
+            .banner-rating-card{
+                padding: 25px;
+                background-color: $primary-clr;
+                width: fit-content;
+                position: absolute;
+                border-radius: 0 0 0 10px;
+                left: 0;
+                bottom: 0;
+
+                .rating-stars{
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+
+                    .rating{
+                      color: white;
+                      font-size: 20px;
+                      font-weight: 500;
+                      margin-top: 7px;
+                      margin-right: 5px;
+                    }
+                }
+
+                .rating-card-title{
+                    font-family: $outfit-font;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: white;
+                    margin: 10px 0;
+                }
+                .rating-card-desc{
+                    font-family: $urbanist-font;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

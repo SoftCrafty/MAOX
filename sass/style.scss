@@ -61,10 +61,6 @@ Footer
 @import "partials/menu-sidebar";
 
 
-
-
-
-
 // 18.Title Card
 @import "partials/title-section";
 
@@ -80,7 +76,15 @@ Footer
 
 
 
-
 // Footer
 // @import "partials/footer";
 
+
+// home 1 nav
+@import "modules/header/style-1";
+@import "modules/banner/style-1";
+@import "modules/section-title/section-title";
+@import "modules/section-heading/section-heading";
+@import "modules/trusted-clients/trusted-clients";
+@import "modules/about-us/about-us";
+@import "modules/testimonial/testimonial";

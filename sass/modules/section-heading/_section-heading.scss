@@ -1,0 +1,15 @@
+
+.section-heading-wrapper{
+    .section-heading{
+        margin-bottom: 60px;
+        
+        &.style-1{
+            h2{
+                font-family: $outfit-font;
+                font-weight: 300;
+                font-size: 70px;
+                line-height: 90px;
+            }
+        }
+    }
+}
