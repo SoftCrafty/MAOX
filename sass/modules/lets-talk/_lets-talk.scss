@@ -1,0 +1,34 @@
+
+// Let's Talk section
+
+.lets-talk{
+    padding: 100px 0;
+    background-color: black;
+    z-index: 5;
+    background-image: url('/images/lets-talk/vector.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h2{
+        color: white;
+        font-family: $outfit-font;
+        font-weight: 500;
+        font-size: 90px;
+        line-height: 110px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .read-more-btn{
+        color: white;
+        border-color: white;
+    }
+}
+
+.talk-img {
+    margin-top: -140px;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}

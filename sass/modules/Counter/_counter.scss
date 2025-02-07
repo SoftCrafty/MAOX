@@ -1,0 +1,46 @@
+
+// counter section
+
+.counter-wrapper {
+    width: 100%; 
+    background-color: $primary-clr;
+    color: white;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    width: 100%;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+    border-right: 1px solid white;
+
+    &:last-child{
+        border-right: none;
+    }
+}
+
+.stat h2 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: $outfit-font;
+    line-height: 90px;
+    color: white;
+    margin-bottom: 0;
+}
+
+.stat p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: $outfit-font;
+    line-height: 30px;
+    color: white;
+}

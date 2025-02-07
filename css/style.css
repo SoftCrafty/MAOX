@@ -6123,7 +6123,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .section-heading-wrapper .section-heading {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .section-heading-wrapper .section-heading.style-1 h2 {
   font-family: "Outfit", serif;
@@ -6281,4 +6281,121 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .testimonial-author-img.active {
   border: 3px solid #D9A14C;
+}
+
+.section-desc {
+  margin-top: -20px;
+  margin-left: 120px;
+}
+.section-desc p {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #595959;
+}
+
+.gallery-card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.gallery-card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.gallery-card-title {
+  background-color: #F2F2F2;
+  padding: 3px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery-card-title h5 {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+}
+.gallery-card-title .read-more-btn {
+  border: none;
+}
+
+.gallery-images {
+  margin-left: 120px;
+  margin-top: 42px;
+}
+
+.lets-talk {
+  padding: 100px 0;
+  background-color: black;
+  z-index: 5;
+  background-image: url("/images/lets-talk/vector.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lets-talk h2 {
+  color: white;
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 90px;
+  line-height: 110px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.lets-talk .read-more-btn {
+  color: white;
+  border-color: white;
+}
+
+.talk-img {
+  margin-top: -140px;
+}
+.talk-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.counter-wrapper {
+  width: 100%;
+  background-color: #47CD7D;
+  color: white;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  width: 100%;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  border-right: 1px solid white;
+}
+.stat:last-child {
+  border-right: none;
+}
+
+.stat h2 {
+  font-size: 70px;
+  font-weight: 400;
+  font-family: "Outfit", serif;
+  line-height: 90px;
+  color: white;
+  margin-bottom: 0;
+}
+
+.stat p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Outfit", serif;
+  line-height: 30px;
+  color: white;
 }
