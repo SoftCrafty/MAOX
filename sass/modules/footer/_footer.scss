@@ -1,0 +1,117 @@
+//footer area
+
+.footer-area{
+    background-color: black;
+    padding-top: 140px;
+    
+}
+.footer-widget{
+    border: 1px solid #cccccc5c;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: rgb(204 204 204 / 14%);
+    position: relative;
+
+    h5{
+        font-family: $outfit-font;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    a{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
+    span{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        height: 65px;
+        width: 65px;
+        border-radius: 100%;
+        background-color: $primary-clr;
+        color: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            font-size: 25px;
+        }
+    }
+}
+
+.footer-widget-logo{
+    p{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+        margin-top: 20px;
+    }
+}
+
+.footer-widget-links{
+    border-left: 1px solid #cccccc5c;
+    padding-left: 50px;
+
+    li{
+        line-height: 3;
+        a{
+            font-family: $urbanist-font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+
+            &:hover{
+                color: $primary-clr;
+            }
+        }
+    }
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #cccccc5c;
+
+    p{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: white;
+    }
+
+    ul{
+        display: flex;
+        gap: 40px;
+
+        li{
+            a{
+                font-family: $urbanist-font;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: white;
+    
+                &:hover{
+                    color: $primary-clr;
+                }
+            }
+        }
+    }
+}

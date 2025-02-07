@@ -61,4 +61,19 @@
 
         }
     }
+    &.style-3{
+        h4{
+            margin: auto;
+            
+            &::before{
+                content: '';
+                position: absolute;
+                top: 40%;
+                right: 110%;
+                height: 1px;
+                width: 100px;
+                background-color: $primary-clr;
+            }
+        }
+    }
 }

@@ -1,0 +1,67 @@
+// blog section and blog item card
+
+.blog-item{
+    border: 1px solid $gray-200-clr;
+    padding: 35px;
+    border-radius: 10px;
+
+    &-img{
+        position: relative;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        button{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 10px;
+            background-color: $primary-clr;
+        }
+    }
+    .blog-item-content{
+        margin-top: 20px;
+        h2{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: black;
+            max-width: 240px;
+            margin-top: 5px;
+
+            &:hover{
+                a{
+                    color: $primary-clr;
+                }
+            }
+        }
+
+        .read-more-btn{
+            border: none;
+            padding: 0;
+            margin-top: 25px;
+        }
+    }
+}
+.blog-date{
+    i{
+        color: $primary-clr;
+        font-size: 16px;
+    }
+    span{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: black;
+        margin-left: 5px;
+    }
+}

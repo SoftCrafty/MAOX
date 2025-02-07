@@ -6121,6 +6121,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100px;
   background-color: #47CD7D;
 }
+.sec-title.style-3 h4 {
+  margin: auto;
+}
+.sec-title.style-3 h4::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 110%;
+  height: 1px;
+  width: 100px;
+  background-color: #47CD7D;
+}
 
 .section-heading-wrapper .section-heading {
   margin-bottom: 40px;
@@ -6398,4 +6410,204 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-family: "Outfit", serif;
   line-height: 30px;
   color: white;
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #CCCCCC;
+  margin-top: 20px;
+}
+.service-item:first-child {
+  margin-top: -30px;
+}
+
+.service-item-content h2 {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 90px;
+  color: black;
+}
+.service-item-content p {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.service-item-content .read-more-btn {
+  border: none;
+  padding-left: 0;
+}
+
+.service-item-img img {
+  border-radius: 20px;
+}
+
+.blog-item {
+  border: 1px solid #CCCCCC;
+  padding: 35px;
+  border-radius: 10px;
+}
+.blog-item-img {
+  position: relative;
+}
+.blog-item-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.blog-item-img button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #47CD7D;
+}
+.blog-item .blog-item-content {
+  margin-top: 20px;
+}
+.blog-item .blog-item-content h2 {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  max-width: 240px;
+  margin-top: 5px;
+}
+.blog-item .blog-item-content h2:hover a {
+  color: #47CD7D;
+}
+.blog-item .blog-item-content .read-more-btn {
+  border: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.blog-date i {
+  color: #47CD7D;
+  font-size: 16px;
+}
+.blog-date span {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  margin-left: 5px;
+}
+
+.footer-area {
+  background-color: black;
+  padding-top: 140px;
+}
+
+.footer-widget {
+  border: 1px solid rgba(204, 204, 204, 0.3607843137);
+  border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: rgba(204, 204, 204, 0.14);
+  position: relative;
+}
+.footer-widget h5 {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  margin-bottom: 5px;
+}
+.footer-widget a {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.footer-widget span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  height: 65px;
+  width: 65px;
+  border-radius: 100%;
+  background-color: #47CD7D;
+  color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-widget span i {
+  font-size: 25px;
+}
+
+.footer-widget-logo p {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-top: 20px;
+}
+
+.footer-widget-links {
+  border-left: 1px solid rgba(204, 204, 204, 0.3607843137);
+  padding-left: 50px;
+}
+.footer-widget-links li {
+  line-height: 3;
+}
+.footer-widget-links li a {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.footer-widget-links li a:hover {
+  color: #47CD7D;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.3607843137);
+}
+.footer-bottom p {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.footer-bottom ul {
+  display: flex;
+  gap: 40px;
+}
+.footer-bottom ul li a {
+  font-family: "Urbanist", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+.footer-bottom ul li a:hover {
+  color: #47CD7D;
 }

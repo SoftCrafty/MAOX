@@ -1,0 +1,47 @@
+// service section
+
+.service-items-wrapper{
+
+}
+
+.service-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-200-clr;
+    margin-top: 20px;
+
+    &:first-child{
+        margin-top: -30px;
+    }
+}
+
+.service-item-content{
+    h2{
+        font-family: $outfit-font;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 90px;
+        color: black;
+    }
+    p{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $text-desc-clr;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    .read-more-btn{
+        border: none;
+        padding-left: 0;
+    }
+}
+.service-item-img{
+    img{
+        border-radius: 20px;
+    }
+}
