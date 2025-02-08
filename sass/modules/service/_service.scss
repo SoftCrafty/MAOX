@@ -12,6 +12,11 @@
     border-bottom: 1px solid $gray-200-clr;
     margin-top: 20px;
 
+    @include sm{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     &:first-child{
         margin-top: -30px;
     }
@@ -24,6 +29,23 @@
         font-size: 70px;
         line-height: 90px;
         color: black;
+
+        @include xl{
+            font-size: 60px;
+            line-height: 1.4;
+        }
+        @include lg{
+            font-size: 42px;
+        }
+        @include md{
+            font-size: 36px;
+        }
+        @include sm{
+            font-size: 32px;
+        }
+        @include xs{
+            font-size: 26px;
+        }
     }
     p{
         font-family: $urbanist-font;
@@ -33,6 +55,12 @@
         color: $text-desc-clr;
         margin-top: 5px;
         margin-bottom: 0;
+
+        @include xxs{
+            br{
+                display: none;
+            }
+        }
     }
 
     .read-more-btn{

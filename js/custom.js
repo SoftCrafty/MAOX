@@ -23,6 +23,7 @@
     },
 });
   
+  
 // Add active border effect when the slide changes
 swiper.on('slideChange', function () {
   document.querySelectorAll('.testimonial-author-img').forEach(img => {
@@ -34,6 +35,37 @@ swiper.on('slideChange', function () {
   document.querySelectorAll('.testimonial-author-img')[activeIndex].style.border = '3px solid #47CD7D'; 
 });
 
+// home 1 blog slider
+const homeSlider = new Swiper('.home-1-blog-slider', {
+  loop: true, 
+  autoplay: true,
+  freeMode: true,
+  spaceBetween: 24,
+  slidesPerView: 3, 
+  breakpoints: {
+    0: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+    },
+    480: {
+        centeredSlides: true,
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+    },
+    768: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+    },
+    992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+    },
+    1400: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+    }
+  },
+});
 
 
 

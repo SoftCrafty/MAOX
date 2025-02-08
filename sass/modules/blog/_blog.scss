@@ -4,12 +4,17 @@
     border: 1px solid $gray-200-clr;
     padding: 35px;
     border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px;
+    transition: all 0.4s linear 0s;
 
     &-img{
         position: relative;
         img{
             width: 100%;
             border-radius: 10px;
+            transition: all 0.4s linear 0s;
         }
 
         button{
@@ -24,6 +29,21 @@
             padding: 5px 20px;
             border-radius: 10px;
             background-color: $primary-clr;
+
+            @include lg{
+                font-size: 18px;
+            }
+            @include md{
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+    }
+    &:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        img{
+            transform: scale(1.1);
         }
     }
     .blog-item-content{
@@ -36,6 +56,13 @@
             color: black;
             max-width: 240px;
             margin-top: 5px;
+
+            @include lg{
+                br{
+                    display: none;
+                }
+                font-size: 18px;
+            }
 
             &:hover{
                 a{
@@ -64,4 +91,8 @@
         color: black;
         margin-left: 5px;
     }
+}
+
+.swiper-container{
+    overflow: hidden;
 }

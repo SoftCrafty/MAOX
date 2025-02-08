@@ -1,11 +1,26 @@
 
 .awards{
+
+    @include md{
+        text-align: center;
+    }
     h3{
         font-family: $outfit-font;
         font-weight: 400;
         font-size: 50px;
         line-height: 65px;
         color: black;
+
+        @include lg{
+            font-size: 36px;
+            line-height: 1.2;
+        }
+        @include md{
+            font-size: 30px;
+        }
+        @include sm{
+            font-size: 28px;
+        }
     }
     p{
         font-family: $outfit-font;
@@ -13,6 +28,14 @@
         font-size: 30px;
         line-height: 45px;
         color: black;
+
+        @include lg{
+            font-size: 22px;
+            line-height: 1.2;
+        }
+        @include md{
+            font-size: 20px;
+        }
     }
 }
 
@@ -32,6 +55,15 @@
         font-weight: 500;
         line-height: 45px;
         color: black;
+
+        @include lg{
+            font-size: 22px;
+            line-height: 1.2;
+        }
+        @include md{
+            font-size: 20px;
+            line-height: 1.2;
+        }
     }
     p{
         font-family: $urbanist-font;
@@ -40,6 +72,10 @@
         line-height: 24px;
         color: $text-desc-clr;
         margin-top: 15px;
+
+        @include md{
+            line-height: 1.4;
+        }
     }
 }
 
@@ -50,14 +86,21 @@
     font-weight: 400;
     line-height: 22px;
     color: black;
-    padding: 15px 20px;
+    padding: 12px 20px;
     border: 1px solid black;
     border-radius: 999px;
     margin-top: 10px;
     display: inline-block;
 
+    @include md{
+        padding: 8px 15px;
+    }
+    @include sm{
+        padding: 6px 15px;
+    }
+
     i{
-        margin-left: 5px;
+        margin-left: 8px;
         rotate: 45deg;
         transition: 0.3s all;
     }

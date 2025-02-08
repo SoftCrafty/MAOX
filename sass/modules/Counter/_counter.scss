@@ -1,31 +1,37 @@
 
 // counter section
 
-.counter-wrapper {
-    width: 100%; 
+.counter-sec {
     background-color: $primary-clr;
     color: white;
     padding: 50px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
-.stats {
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    width: 100%;
-}
 
+.counter-wrapper{
+    .col-md-3{
+        border-right: 1px solid white;
+
+        @include xs{
+            border-right: none;
+            border-bottom: 1px solid white;
+        }
+
+        &:last-child{
+            border-right: none;
+            border-bottom: none;
+        }
+        &:nth-child(2){
+            @include sm{
+                border-right: none;
+               
+            }
+        }
+    }
+}
 .stat {
     text-align: center;
-    flex: 1;
-    border-right: 1px solid white;
-
-    &:last-child{
-        border-right: none;
-    }
 }
 
 .stat h2 {
@@ -35,6 +41,20 @@
     line-height: 90px;
     color: white;
     margin-bottom: 0;
+
+    @include lg{
+        font-size: 54px;
+        line-height: 1.2;
+    }
+    @include md{
+        font-size: 46px;
+    }
+    @include sm{
+        font-size: 40px;
+    }
+    @include xs{
+        font-size: 34px;
+    }
 }
 
 .stat p {
@@ -43,4 +63,11 @@
     font-family: $outfit-font;
     line-height: 30px;
     color: white;
+
+    @include md{
+        font-size: 18px;
+    }
+    @include xs{
+        font-size: 16px;
+    }
 }

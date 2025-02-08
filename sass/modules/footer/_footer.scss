@@ -3,7 +3,13 @@
 .footer-area{
     background-color: black;
     padding-top: 140px;
-    
+    position: relative;
+   
+    .col-4{
+        @include xxs{
+            width: 100%;
+        }
+    }
 }
 .footer-widget{
     border: 1px solid #cccccc5c;
@@ -11,8 +17,15 @@
     padding-top: 50px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: rgb(204 204 204 / 14%);
+    background-color: #191919;
     position: relative;
+
+    @include md{
+        padding-top: 30px;
+    }
+    @include sm{
+        margin-bottom: 15px;
+    }
 
     h5{
         font-family: $outfit-font;
@@ -21,6 +34,10 @@
         line-height: 30px;
         color: white;
         margin-bottom: 5px;
+
+        @include md{
+            font-size: 18px;
+        }
     }
     a{
         font-family: $urbanist-font;
@@ -44,13 +61,25 @@
         justify-content: center;
         align-items: center;
 
+        @include md{
+            height: 44px;
+            width: 44px;
+        }
+
         i{
             font-size: 25px;
+
+            @include md{
+                font-size: 20px;
+            }
         }
     }
 }
 
 .footer-widget-logo{
+    @include md{
+        text-align: center;
+    }
     p{
         font-family: $urbanist-font;
         font-weight: 400;
@@ -58,6 +87,11 @@
         line-height: 24px;
         color: white;
         margin-top: 20px;
+
+        @include sm{
+            margin-bottom: 30px;
+        }
+        
     }
 }
 
@@ -65,8 +99,17 @@
     border-left: 1px solid #cccccc5c;
     padding-left: 50px;
 
+    @include md{
+        border-left: none;
+        padding-left: 0;
+        text-align: center;
+    }
+
     li{
         line-height: 3;
+        @include sm{
+            line-height: 2;
+        }
         a{
             font-family: $urbanist-font;
             font-weight: 400;
@@ -81,6 +124,7 @@
     }
 }
 
+
 .footer-bottom{
     display: flex;
     justify-content: space-between;
@@ -88,17 +132,32 @@
     padding: 15px 0;
     border-top: 1px solid #cccccc5c;
 
+    @include sm{
+        flex-direction: column;
+    }
+
     p{
         font-family: $urbanist-font;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: white;
+
+        @include md{
+            font-size: 14px;
+        }
+        @include sm{
+            margin-bottom: 0;
+        }
     }
 
     ul{
         display: flex;
         gap: 40px;
+
+        @include md{
+            gap: 15px;
+        }
 
         li{
             a{
@@ -107,6 +166,10 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: white;
+
+                @include md{
+                    font-size: 14px;
+                }
     
                 &:hover{
                     color: $primary-clr;
@@ -114,4 +177,24 @@
             }
         }
     }
+}
+
+.container-wrapper{
+    position: relative;
+    z-index: 2;
+}
+
+.vector{
+    position: absolute;
+    z-index: 0;
+
+    &.vector-1{
+        top: -30px;
+        left: -30px;
+    }
+    &.vector-2{
+        right: -40px;
+        bottom: -40px;
+    }
+    
 }

@@ -23,6 +23,13 @@
                     align-items: center;
                     margin-bottom: 0;
 
+                    @include md{
+                        display: none;
+                    }
+                    @include sm{
+                        display: none;
+                    }
+
                 li{
                     a{
                         color: white;

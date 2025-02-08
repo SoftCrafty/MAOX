@@ -15,24 +15,34 @@
             color: #1A1A1A;
             text-align: center;
             position: relative;
+            width: fit-content;
+            margin: auto;
             margin-bottom: 60px;
-
+            @include md{
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+            @include sm{
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+            
             &::after{
                 content: '';
                 position: absolute;
                 top: 50%;
-                right: 0;
+                left: 110%;
                 height: 1px;
-                width: 40%;
+                width: 170%;
                 background-color: #E2E2E2;
             }
             &::before{
                 content: '';
                 position: absolute;
                 top: 50%;
-                left: 0;
+                right: 110%;
                 height: 1px;
-                width: 40%;
+                width: 170%;
                 background-color: #E2E2E2;
                
             }
@@ -48,6 +58,13 @@
             position: relative;
             letter-spacing: 1.62px;
             width: fit-content;
+
+            @include md{
+                font-size: 18px;
+            }
+            @include sm{
+                font-size: 16px;
+            }
 
             &::after{
                 content: '';

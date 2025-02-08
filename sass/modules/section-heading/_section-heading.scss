@@ -9,6 +9,25 @@
                 font-weight: 300;
                 font-size: 70px;
                 line-height: 90px;
+
+                @include lg{
+                    font-size: 54px;
+                    line-height: 1.2;
+                }
+                @include md{
+                    font-size: 48px;
+                }
+                @include sm{
+                    font-size: 40px;
+                }
+                @include xs{
+                    font-size: 34px;
+                }
+                @include xxs{
+                    br{
+                        display: none;
+                    }
+                }
             }
         }
     }
