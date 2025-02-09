@@ -4,6 +4,25 @@
 
 
     //MAOX ========================
+
+      // add stiky class for stiky menu
+      $(window).scroll(function(){
+        if ($(window).scrollTop() > 100) {
+            $('body').addClass('sticky')
+      }else{
+        $('body').removeClass('sticky') 
+      }  
+      });
+
+      
+$(".menu-btn").click(function(){
+  $(".main-menu").addClass("show");
+});
+$(".close-btn").click(function(){
+  $(".main-menu").removeClass("show");
+});
+
+
     // ---- testimonial slider ------------
   
     const authorSlider = new Swiper('.testimonial-authors-slider', {

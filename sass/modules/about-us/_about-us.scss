@@ -1,4 +1,9 @@
 
+.about-us{
+    @include md{
+        margin-top: 60px;
+    }
+}
 .awards{
 
     @include md{

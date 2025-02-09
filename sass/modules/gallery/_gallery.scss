@@ -1,6 +1,9 @@
 // gallery style i
 
 .gallery-section{
+    @include md{
+        margin-top: 55px;
+    }
     .section-heading-wrapper{
         .section-heading{
             h2{

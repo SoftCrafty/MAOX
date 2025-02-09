@@ -4,6 +4,11 @@
     background-color: black;
     padding-top: 140px;
     position: relative;
+
+    @include md{
+        margin-top: 50px;
+        padding-top: 80px;
+    }
    
     .col-4{
         @include xxs{

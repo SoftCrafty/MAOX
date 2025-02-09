@@ -1,6 +1,10 @@
 
 // Let's Talk section
-
+.lets-talk-section{
+    @include md{
+        margin-top: 60px;
+    }
+}
 .lets-talk{
     padding: 100px 0;
     background-color: black;

@@ -1,5 +1,9 @@
 // blog section and blog item card
-
+.blog-section{
+    @include md{
+        margin-top: 55px;
+    }
+}
 .blog-item{
     border: 1px solid $gray-200-clr;
     padding: 35px;
