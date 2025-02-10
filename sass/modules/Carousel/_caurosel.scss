@@ -1,0 +1,24 @@
+
+.slide-carousel-wrapper{
+    background-color: $primary-clr;
+    padding: 15px;
+
+    .swiper-wrapper{
+        transition-timing-function: linear
+    }
+
+}
+
+.slide-carousel-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+     
+    h3{
+        font-family: $outfit-font;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 65px;
+        color: $white;
+    }
+}

@@ -3,6 +3,35 @@
     @include md{
         margin-top: 55px;
     }
+
+    &.style-2{
+        .blog-item{
+            padding: 0;
+            overflow: hidden;
+            box-shadow: none;
+
+            &-img{
+                overflow: hidden;
+                border-radius: 0;
+                img{
+                    border-radius: 0;
+                }
+
+               button{
+                   left: 56%;
+                   top: 75%;
+                }
+            }
+            .blog-item-content{
+                margin-left: 40px;
+                margin-bottom: 20px;
+
+                .read-more-btn{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
 }
 .blog-item{
     border: 1px solid $gray-200-clr;

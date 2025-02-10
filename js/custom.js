@@ -85,6 +85,72 @@ const homeSlider = new Swiper('.home-1-blog-slider', {
     }
   },
 });
+const slideCarousel = new Swiper('.slide-carousel-wrapper', {
+  loop: true, 
+  autoplay: {
+    delay: 0,
+},
+  freeMode: true,
+  spaceBetween: 15,
+  speed: 2000,
+  slidesPerView: 4, 
+  breakpoints: {
+    0: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+       
+    },
+    480: {
+        
+        spaceBetween: 15,
+        slidesPerView: 2,
+    },
+    768: {
+        spaceBetween: 15,
+        slidesPerView: 3,
+    },
+    992: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+    },
+    1400: {
+        slidesPerView: 5,
+        spaceBetween: 24,
+    }
+  },
+});
+
+// home 2 blog slider
+const h2blog = new Swiper('.home-2-blog-slider', {
+  loop: true, 
+  autoplay: true,
+  freeMode: true,
+  spaceBetween: 24,
+  slidesPerView: 3, 
+  breakpoints: {
+    0: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+    },
+    480: {
+        centeredSlides: true,
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+    },
+    768: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+    },
+    992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+    },
+    1400: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+    }
+  },
+});
 
 
 

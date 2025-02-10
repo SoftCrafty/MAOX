@@ -1,10 +1,10 @@
 
-.sticky .header-menu-area{
+.sticky .header-area{
     position: fixed;
     z-index: 9999;
-    padding-top: 20px;
     right: 0;
     left: 0;
+    top: 0;
    animation: sticy-menu 1s;
    animation-direction: inherited;
 }
@@ -18,7 +18,9 @@
     }
 }
 
-
+.sticky .header-menu-area{
+  padding-top: 18px;
+}
 
 .header-menu-area{
 
@@ -30,7 +32,7 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid $gray-200-clr;
-            padding: 30px 0;
+            padding: 18px 0;
         }
 
         .menu{
@@ -238,16 +240,64 @@
                 }
             }
 
-            }
+          }
 
-            .menu-btn{
-                height: 40px;
-                width: 40px;
-                border-radius: 100%;
-                background-color: $primary-clr;
-                color: white;
-            }
+          .menu-btn{
+              height: 40px;
+              width: 40px;
+              border-radius: 100%;
+              background-color: $primary-clr;
+              color: white;
+          }
         }
 
+  }
+
+  &.style-2{
+    background-color: white;
+
+    .menu{
+      .main-menu {
+        ul{
+          li{
+            a{
+              color: black;
+            }
+          }
+        }
+      }
+
+      .menu-right{
+          // style here
+      }
+
     }
+  }
 }
+
+// .header-area {
+//   &.style-2{
+//     .header-menu-area{
+      
+//         background-color: white;
+    
+//         .menu{
+//           .main-menu {
+//             ul{
+//               li{
+//                 a{
+//                   color: black;
+//                 }
+//               }
+//             }
+//           }
+    
+//           .menu-right{
+    
+//           }
+    
+//         }
+      
+//     }
+//   }
+// }
