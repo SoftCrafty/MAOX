@@ -123,3 +123,14 @@
         border: none;
     }
 }
+
+.about-us{
+    &.style-2{
+        .abt-img{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

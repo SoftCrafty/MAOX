@@ -71,3 +71,58 @@
         font-size: 16px;
     }
 }
+
+//================= ==================
+// home 2 counter section
+
+.counter-2{
+    background-color: $black-900;
+    padding: 100px 0;
+    
+
+    .counter-box{
+        h3{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 90px;
+            line-height: 110px;
+            letter-spacing: 0;
+            color: $white;
+        }
+        &-title{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 45px;
+            color: $white;
+        }
+        .desc-text-1{
+            color: $white;
+            width: 410px;
+           
+        }
+    }
+}
+
+.b-r{
+    border-right: 1px solid $gray-200-clr;
+}
+.b-b{
+    border-bottom: 1px solid $gray-200-clr;
+}
+.b-l{
+    border-left: 1px solid $gray-200-clr;
+}
+
+.pr-60{
+    padding-right: 60px;
+}
+.pl-60{
+    padding-left: 60px;
+}
+.pb-50{
+    padding-bottom: 20px;
+}
+.pt-50{
+    padding-top: 15px;
+}

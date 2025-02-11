@@ -127,3 +127,52 @@
 .testimonial-author-img.active {
     border: 3px solid $primary-color; 
 }
+
+// home -2 testimonial ====================
+
+.h2-testimonial-wrapper{
+
+    margin-top: -100px;
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+
+    .testimonial-card{
+        max-width: 550px;
+        background-color: #EDFAF2;
+        padding: 30px 40px;
+        border-radius: 10px;
+        position: absolute;
+        left: 200px;
+        bottom: 60px;
+
+    }
+    .testimonial-item{
+        text-align: left;
+
+        .ratings-star{
+            justify-content: left;
+        }
+        .testimonial-text p{
+            text-align: left;
+        }
+
+        .author{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            img{
+                width: 49px;
+                height: 49px;
+                border-radius: 50%;
+
+            }
+            .title{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

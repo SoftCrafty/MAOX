@@ -75,3 +75,47 @@
         border-radius: 20px;
     }
 }
+
+// home 2 service section ====================
+.h2-service-item{
+    border: 1px solid $gray-200-clr;
+    border-radius: 10px;
+    padding: 25px;
+    transition: all 0.3s linear;
+
+    &-icon-title{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        h4{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &-img{
+        overflow: hidden;
+        width: 100%;
+        img{
+            transition: all 0.3s linear;
+        }
+    }
+
+    &:hover{
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        .h2-service-item-img{
+            img{
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .style-3{
+        border: none;
+        padding-left: 0;
+    }
+
+}

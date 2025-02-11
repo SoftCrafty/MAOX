@@ -12,3 +12,19 @@
     .client{
         text-align: center;
     }
+
+.trusted-clients{
+    &.style-2{
+
+        .trusted-clients-wrapper{
+            background-color: $black-900;
+            padding: 90px 80px;
+            z-index: 5;
+            position: relative;
+        }
+
+        .sec-title > h4{
+            color: $white;
+        }
+    }
+}

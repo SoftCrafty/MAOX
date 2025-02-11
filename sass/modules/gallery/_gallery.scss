@@ -95,3 +95,60 @@
     }
 }
  
+
+// home 2 gallery section ====================
+
+.h2-gallery-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-title{
+        position: absolute;
+        p{
+           font-family: $outfit-font;
+           font-weight: 500;
+           font-size: 30px;
+           line-height: 45px;
+           color: $black-900;
+           margin-bottom: -5px;
+        }
+        h2{
+            font-family: $outfit-font;
+            font-size: 70px;
+            font-weight: 300;
+            line-height: 90px;
+            color: $black-900;
+
+            span{
+                font-weight: 400;
+            }
+        }
+
+        .read-more-btn{
+            border: none;
+            margin-top: 0;
+            padding-left: 0;
+
+            i{
+                color: $primary-clr;
+            }
+        }
+
+        &.style-2{
+            text-align: right;
+            right: 0;
+        }
+    }
+    &-img{
+        img{
+            max-width: 85%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        &.style-1{
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+}
