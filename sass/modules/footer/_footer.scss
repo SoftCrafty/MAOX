@@ -135,7 +135,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    border-top: 1px solid #cccccc5c;
+    border-top: 1px solid $border-clr;
 
     @include sm{
         flex-direction: column;
@@ -202,4 +202,110 @@
         bottom: -40px;
     }
     
+}
+
+
+// home 2 footer ===========================
+
+.footer-area.style-2{
+
+    margin-top: -200px;
+    padding-top: 210px;
+
+    @include md{
+        margin-top: -120px;
+        padding-top: 130px;
+    }
+    @include sm{
+        margin-top: -80px;
+        padding-top: 90px;
+    }
+    @include xxs{
+        margin-top: -60px;
+        padding-top: 60px;
+    }
+
+    .footer-widget-contact{
+
+        
+        .address{
+            
+            @include md{
+               text-align: center;
+                justify-content: center;
+            }
+        }
+
+        span i{
+            font-size: 20px;
+            color: $primary-clr;
+
+            @include md{
+                font-size: 16px;
+            }
+        }
+        
+        p{
+            font-family: $urbanist-font;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+
+            @include md{
+                font-size: 16px;
+            }
+
+            span{
+                font-family: $outfit-font;
+                font-weight: 500;
+                line-height: 30px;
+                color: $white;
+
+            }
+        }
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-clr;
+        padding: 40px 0;
+
+        @include xxs{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .email-form{
+        border: 1px solid $border-clr;
+        border-radius: 10px;
+        padding: 2px;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+
+        input{
+            padding: 0 10px;
+            border: none;
+            background-color: transparent;
+            color: $white;
+            font-size: 16px;
+            
+        }
+
+        button{
+            height: 40px;
+            width: 40px;;
+            border: none;
+            background-color: $primary-clr;
+            color: $white;
+            border-radius: 10px;
+
+            i{
+                font-size: 18px;
+            }
+        }
+    }
 }

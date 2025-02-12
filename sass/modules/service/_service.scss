@@ -77,6 +77,12 @@
 }
 
 // home 2 service section ====================
+.h2-service{
+    @include md{
+        margin-top: 55px;
+    }
+}
+
 .h2-service-item{
     border: 1px solid $gray-200-clr;
     border-radius: 10px;
@@ -88,18 +94,33 @@
         align-items: center;
         gap: 15px;
 
+        img{
+            max-width: 80px;
+            max-height: 60px;
+        }
+
         h4{
             font-family: $outfit-font;
             font-weight: 500;
             font-size: 30px;
             line-height: 40px;
+
+            @include lg{
+                font-size: 24px;
+                line-height: 1.4;
+            }
+            @include md{
+                font-size: 22px;
+                line-height: 1.4;
+            }
         }
     }
     &-img{
         overflow: hidden;
-        width: 100%;
+
         img{
             transition: all 0.3s linear;
+            width: 100%;
         }
     }
 

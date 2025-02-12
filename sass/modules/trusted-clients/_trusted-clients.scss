@@ -3,10 +3,16 @@
         row-gap: 90px;
 
         @include md{
-            row-gap: 60px;
+            row-gap: 40px;
         }
         @include sm{
             row-gap: 30px;
+        }
+        @include xs{
+            row-gap: 20px;
+        }
+        @include xxs{
+            row-gap: 15px;
         }
     }
     .client{
@@ -21,6 +27,16 @@
             padding: 90px 80px;
             z-index: 5;
             position: relative;
+
+            @include md{
+                padding: 55px 50px;
+            }
+            @include sm{
+                padding: 40px 30px;
+            }
+            @include xxs{
+                padding: 40px 12px;
+            }
         }
 
         .sec-title > h4{

@@ -71,3 +71,52 @@
         object-fit: cover;
     }
 }
+
+.lets-talk-section{
+    &.style-2{
+        margin-top: 50px;
+        position: relative;
+        z-index: 5;
+        .lets-talk{
+            background-image: none;
+            background-color: $primary-clr;
+            padding: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+
+            @include lg{
+                padding: 50px;
+            }
+            @include sm{
+                padding: 30px;
+            }
+            @include xs{
+                padding: 20px;
+            }
+
+            h2{
+                text-align: left;
+                @include sm{
+                    font-size: 24px;
+                }
+                @include xs{
+                    font-size: 22px;
+                }
+            }
+
+            .style-4{
+                &:hover{
+                    background-color: $white;
+                    color: $black-900;
+                }
+            }
+
+            img{
+                max-width: 30%;
+            }
+            
+        }
+    }
+}

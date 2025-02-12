@@ -1,13 +1,5 @@
 
-.sticky .header-area{
-    position: fixed;
-    z-index: 9999;
-    right: 0;
-    left: 0;
-    top: 0;
-   animation: sticy-menu 1s;
-   animation-direction: inherited;
-}
+
 @keyframes sticy-menu {
     0% {
      top: -50px;   
@@ -19,11 +11,25 @@
 }
 
 .sticky .header-menu-area{
-  padding-top: 18px;
+  //padding-top: 18px;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  left: 0;
+  top: 0;
+  animation: sticy-menu 1s;
+  animation-direction: inherited;
+
+  &.style-2{
+    background-color: $white;
+    
+  }
 }
 
 .header-menu-area{
-
+    position: relative;
+    z-index: 9999;
+    
     &.style-1{
         background-color: black;
 
@@ -254,8 +260,8 @@
   }
 
   &.style-2{
-    background-color: white;
-
+    background-color: transparent;
+    
     .menu{
       .main-menu {
         ul{

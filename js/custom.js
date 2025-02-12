@@ -96,21 +96,26 @@ const slideCarousel = new Swiper('.slide-carousel-wrapper', {
   slidesPerView: 4, 
   breakpoints: {
     0: {
-        slidesPerView: 2,
-        spaceBetween: 15,
+        slidesPerView: 1,
+        spaceBetween: 5,
        
     },
     480: {
         
-        spaceBetween: 15,
-        slidesPerView: 2,
+        spaceBetween: 10,
+        slidesPerView: 1.5
+    },
+    576: {
+        
+        spaceBetween: 10,
+        slidesPerView: 2
     },
     768: {
         spaceBetween: 15,
         slidesPerView: 3,
     },
     992: {
-        slidesPerView: 4,
+        slidesPerView: 4 ,
         spaceBetween: 15,
     },
     1400: {
@@ -150,6 +155,45 @@ const h2blog = new Swiper('.home-2-blog-slider', {
         spaceBetween: 24,
     }
   },
+});
+
+// h2-service slider
+const h2service = new Swiper('.h2-swiper-sevice-wrapper', {
+  loop: true,
+  freeMode: true,
+  spaceBetween: 24,
+  slidesPerView: 3, 
+  breakpoints: {
+    0: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+    },
+    480: {
+        centeredSlides: true,
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+    },
+    768: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+    },
+    992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+    },
+    1400: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+    }
+  },
+});
+
+//h2 testimonial slider
+const h2testimonial = new Swiper('.h2-testimonial-swiper', {
+  loop: true,
+  freeMode: true,
+  autoplay: true,
+  spaceBetween: 40
 });
 
 

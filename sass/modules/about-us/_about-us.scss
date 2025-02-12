@@ -127,9 +127,16 @@
 .about-us{
     &.style-2{
         .abt-img{
+            height: 100%;
             img{
                 width: 100%;
                 object-fit: cover;
+                height: 100%;
+            }
+        }
+        .section-heading-wrapper{
+            .section-heading{
+                margin-bottom: 20px;
             }
         }
     }
