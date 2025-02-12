@@ -3,25 +3,44 @@
   $(document).ready(function () {
 
 
-    //MAOX ========================
+    //MAOX =================================================
 
-      // add stiky class for stiky menu
-      $(window).scroll(function(){
-        if ($(window).scrollTop() > 100) {
-            $('body').addClass('sticky')
-      }else{
-        $('body').removeClass('sticky') 
-      }  
+    // Responsive sidebar menu and sticky menu show hide
+    
+      // Function to manage sticky class based on scroll position
+      function handleSticky() {
+        if ($(window).scrollTop() > 100 && !$(".main-menu").hasClass("show")) {
+          $("body").addClass("sticky");
+        } else {
+          $("body").removeClass("sticky");
+        }
+      }
+    
+      // Initial check when page loads
+      handleSticky();
+    
+      // Scroll event to manage sticky class dynamically
+      $(window).scroll(function () {
+        handleSticky();
       });
-
-      
-$(".menu-btn").click(function(){
-  $(".main-menu").addClass("show");
-});
-$(".close-btn").click(function(){
-  $(".main-menu").removeClass("show");
-});
-
+    
+      // Show sidebar menu on menu button click
+      $(".menu-btn").click(function () {
+        $(".main-menu").addClass("show");
+    
+        // Remove 'sticky' class when menu is shown
+        $("body").removeClass("sticky");
+      });
+    
+      // Hide sidebar menu on close button click
+      $(".close-btn").click(function () {
+        $(".main-menu").removeClass("show");
+    
+        // Re-add 'sticky' class only if scrolled past 100px
+        handleSticky();
+      });
+    
+    
 
     // ---- testimonial slider ------------
   

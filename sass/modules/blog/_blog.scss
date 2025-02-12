@@ -6,8 +6,8 @@
 
     &.style-2{
 
-        @include md{
-            margin-top: 0;
+        @include sm{
+           margin-top: 0;
         }
         .blog-item{
             padding: 0;
