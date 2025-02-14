@@ -1,0 +1,78 @@
+
+// breadcrump section ============
+
+.breadcrump{
+    background-color: $gray-100-clr;
+    padding: 60px 0;
+
+    @include md{
+        padding: 40px;
+    }
+
+    .breadcrump-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .breadcrupm-content{
+        margin-left: 200px;
+
+        @include lg{
+            margin-left: 160px;
+        }
+        @include md{
+            margin-left: 120px;
+        }
+        @include sm{
+            margin-left: 100px;
+        }
+        @include xs{
+            margin-left: 50px;
+        }
+    }
+
+    .breadcrupm-title{
+        
+        h3{
+            font-family: $outfit-font;
+            font-weight: 400;
+            font-size: 50px;
+            line-height: 65px;
+            color: $black-900;
+            margin-top: 10px;
+
+            @include lg{
+                font-size: 36px;
+                line-height: 1.2;
+            }
+            @include md{
+                font-size: 30px;
+            }
+            @include sm{
+                font-size: 22px;
+                margin-top: 5px;
+            }
+
+            @include xs{
+              font-size: 18px;
+            }
+            @include xxs{
+              font-size: 16px;
+            }
+    
+            span{
+                font-weight: 300;
+                color: $text-desc-clr;
+            }
+        }
+    }
+
+    .breadcrump-img{
+        max-width: 20%;
+
+        @include xxs{
+            display: none;
+        }
+    }
+}

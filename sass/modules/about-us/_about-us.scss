@@ -122,6 +122,16 @@
         color: white;
         border: none;
     }
+
+    &.style-3{
+        background-color: $white;
+        border: 1px solid $gray-200-clr;
+        border-radius: 10px;
+
+        i{
+            rotate: 0deg;
+        }
+    }
 }
 
 .about-us{

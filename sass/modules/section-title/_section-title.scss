@@ -68,7 +68,6 @@
                 height: 1px;
                 width: 170%;
                 background-color: #E2E2E2;
-               
             }
         }
     }
@@ -123,4 +122,48 @@
             }
         }
     }
+    &.style-4{
+        h4{
+            font-family: $urbanist-font;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 22px;
+            color: $black-900;
+            position: relative;
+            letter-spacing: 1.62px;
+            width: fit-content;
+
+            @include md{
+                font-size: 16px;
+            }
+            @include sm{
+                font-size: 14px;
+            }
+            @include xs{
+                font-size: 12px;
+            }
+            @include xxs{
+                font-size: 10px;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 110%;
+                height: 1px;
+                width: 100px;
+                background-color: $primary-clr;
+
+                @include sm{
+                    width: 80px;
+                }
+                @include xs{
+                    width: 60px;
+                }
+            }
+
+        }
+    }
 }
+
