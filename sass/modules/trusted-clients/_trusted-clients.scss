@@ -20,6 +20,17 @@
     }
 
 .trusted-clients{
+
+    margin-top: 100px;
+
+    &.mt-240{
+        margin-top: 240px;
+    }
+
+    @include md{
+        margin-top: 50px;
+    }
+
     &.style-2{
 
         .trusted-clients-wrapper{

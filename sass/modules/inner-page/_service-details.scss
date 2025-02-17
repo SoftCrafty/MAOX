@@ -7,6 +7,24 @@
         line-height: 90px;
         font-size: 70px;
         color: $black-900;
+
+        @include lg{
+            font-size: 54px;
+            line-height: 1.2;
+        }
+
+        @include md{
+            font-size: 44px;
+        }
+        @include sm{
+            font-size: 38px;
+        }
+        @include xs{
+            font-size: 32px;
+        }
+        @include xxs{
+            font-size: 30px;
+        }
     }
 }
 
@@ -14,10 +32,22 @@
 
     margin: 50px 0;
 
+    @include md{
+        margin: 40px 0;
+    }
+
+    @include sm{
+        margin: 30px 0;
+    }
+
     .service-card{
         border: 1px solid $gray-200-clr;
         border-radius: 10px;
         padding: 25px;
+
+        @include sm{
+            padding: 20px;
+        }
 
         figure{
             width: 82px;
@@ -34,6 +64,12 @@
             font-size: 20px;
             line-height: 30px;
             
+            @include sm{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 16px;
+            }
 
             a{
                 color: $black-900;
@@ -50,10 +86,17 @@
         color: $primary-clr;
         font-size: 16px;
         margin-right: 5px;
+
+        @include sm{
+            font-size: 14px;
+        }
+        @include xxs{
+            font-size: 12px;
+        }
     }
 
     li{
-        line-height: 2;
+        line-height: 2.2;
         color: $black-900;
     }
 }
@@ -64,6 +107,15 @@
     font-size: 30px;
     line-height: 45px;
     color: $black-900;
+
+    @include lg{
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    @include sm{
+        font-size: 22px;
+    }
 }
 
 .service-list-container{
@@ -82,6 +134,10 @@
         border: 1px solid $gray-200-clr;
         transition: all 0.3s;
 
+        @include sm{
+            padding: 5px 15px;
+        }
+
         &:hover{
             background-color: $primary-clr;
             color: $white;
@@ -98,6 +154,14 @@
             line-height: 30px;
             color: $gray-text-clr;
             transition: all 0.3s;
+
+            @include lg{
+                font-size: 18px;
+            }
+
+            @include sm{
+                font-size: 16px;
+            }
         }
 
     }

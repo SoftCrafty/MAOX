@@ -9,6 +9,7 @@
                 font-weight: 300;
                 font-size: 70px;
                 line-height: 90px;
+                color: $black-900;
 
                 @include lg{
                     font-size: 54px;
@@ -24,11 +25,31 @@
                     font-size: 34px;
                 }
                 @include xxs{
+                    font-size: 30px;
                     br{
                         display: none;
                     }
                 }
             }
+        }
+
+        &.style-2{
+            h2{
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                span{
+                    font-weight: 300;
+                }
+
+                @include xs{
+                    font-size: 30px;
+                }
+                @include xxs{
+                    font-size: 28px;
+                }
+            }
+            
         }
     }
 }

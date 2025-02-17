@@ -216,6 +216,11 @@ const h2testimonial = new Swiper('.h2-testimonial-swiper', {
 });
 
 
+ /* Counter Js ============================*/
+        $(".counter").counterUp({
+          delay: 10,
+          time: 1500,
+        });
 
 
 
@@ -1177,13 +1182,7 @@ const h2testimonial = new Swiper('.h2-testimonial-swiper', {
       });
     });
 
-    /*
-        Counter Js
-        ============================*/
-    $(".counter").counterUp({
-      delay: 10,
-      time: 1000,
-    });
+   
 
     /*
        Magnific Popup

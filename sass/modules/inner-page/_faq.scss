@@ -1,0 +1,87 @@
+
+
+.faq-container{
+
+    .accordion-item{
+        background-color: $white;
+        margin-bottom: 20px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border: none;
+
+        .accordion-header{
+            font-family: $outfit-font;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: $black-900;
+            box-shadow: rgba(149, 157, 165, 0.15) 0px 5px 20px;
+
+            .accordion-button{
+                color: $black-900;
+                padding: 13px 20px;
+                
+                &.collapsed{
+                    &::before{
+                        content: "\2b";
+                        font-family: "Font Awesome 6 pro";
+                    }
+                }
+
+                &:not(.collapsed){
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+               
+
+                &:hover{
+                    color: $black-900;
+                }
+
+                &:focus{
+                    background-color: $white;
+                    box-shadow: none;
+                }
+
+                &:after{
+                    display: none;
+                }
+                &:before{
+                    
+                    // position: absolute;
+                    content: "\f068";
+                    font-family: 
+                    "Font Awesome 6 pro";
+                    font-size: 16px;
+                    font-weight: 900;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 50%;
+                    background-color: $blue-500-clr;
+                    color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 20px;
+
+                    @include sm{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .accordion-body{
+            width: 70%;
+            padding-left: 15px;
+            margin-top: 20px;
+            border-left: 2px solid $blue-500-clr;
+
+            @include lg{
+                width: 90%;
+            }
+            @include md{
+                width: 100%;
+            }
+        }
+    }
+}

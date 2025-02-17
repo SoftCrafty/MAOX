@@ -4,9 +4,11 @@
 .breadcrump{
     background-color: $gray-100-clr;
     padding: 60px 0;
+    margin-bottom:90px;
 
     @include md{
         padding: 40px;
+        margin-bottom: 40px;
     }
 
     .breadcrump-wrapper{

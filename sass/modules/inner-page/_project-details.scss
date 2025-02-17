@@ -1,0 +1,129 @@
+
+
+.project-info-container{
+    padding: 50px;
+    background-color: $white;
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
+
+    @include lg{
+        padding: 30px;
+    }
+    @include xs{
+        padding: 20px;
+    }
+
+    .project-img{
+        width: 100%;
+    }
+}
+
+.project-info{
+    padding: 30px 40px;
+    background-color: $white;
+    box-shadow: rgba(149, 157, 165, 0.17) 0px 8px 24px;
+
+    @include lg{
+        padding: 20px 30px;
+    }
+}
+
+.info-item-container{
+    display: grid;
+    gap: 20px;
+
+    @include lg{
+        gap: 15px;
+    }
+}
+
+.info-item{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border: 1px solid $gray-200-clr;
+    border-radius: 10px;
+    padding: 8px 20px;
+
+    @include sm{
+        padding: 5px 15px;
+        gap: 20px;
+    }
+
+    @include xxs{
+        padding: 5px 7px;
+        gap: 15px;
+    }
+
+    h4{
+        font-family: $outfit-font;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $black-900;
+
+        @include lg{
+            font-size: 18px;
+        }
+        @include sm{
+            font-size: 16px;
+        }
+    }
+}
+
+.project-details-container{
+    margin-top: 60px;
+
+    @include md{
+        margin-top: 40px;
+    }
+}
+
+.services-list{
+    &.style-2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 0;
+
+        @include md{
+            grid-template-columns: 1fr;
+            margin: 40px 0;
+        }
+
+        @include sm{
+            margin: 30px 0;
+        }
+        @include xs{
+            margin: 25px 0;
+        }
+        @include xxs{
+            margin: 20px 0;
+        }
+    }
+}
+
+.heading-title{
+    font-family: $outfit-font;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    color: $black-900;
+    margin-bottom: 15px;
+
+    @include lg{
+        font-size: 38px;
+        line-height: 1.2;
+    }
+    @include md{
+        font-size: 32px;
+    }
+    @include sm{
+        font-size: 30px;
+    }
+    @include xs{
+        font-size: 26px;
+    }
+
+    span{
+        font-weight: 300;
+    }
+}

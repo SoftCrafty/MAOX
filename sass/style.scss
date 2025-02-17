@@ -79,8 +79,10 @@ Footer
 // Footer
 // @import "partials/footer";
 
+// common style
+@import "partials/common-style";
 
-// home 1 
+// all pages
 @import "modules/header/style-1";
 @import "modules/banner/style-1";
 @import "modules/section-title/section-title";
@@ -99,3 +101,5 @@ Footer
 // inner pages
 @import "modules/inner-page/breadcrum";
 @import "modules/inner-page/service-details";
+@import "modules/inner-page/project-details";
+@import "modules/inner-page/faq";

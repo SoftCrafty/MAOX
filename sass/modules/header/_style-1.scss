@@ -30,9 +30,11 @@
 .header-menu-area{
     position: relative;
     z-index: 9999;
+
+    
     
     &.style-1{
-        background-color: black;
+        background-color: $black-900;
 
         .header-menu-wrapper{
             display: flex;
@@ -124,7 +126,7 @@
                     padding: 0;
                     position: relative;
                     margin-bottom: 0;
-                li{
+                  li{
                     display: inline-block;
                     padding: 0;
                     margin-right: 30px;
@@ -313,6 +315,20 @@
       }
 
     }
+  }
+
+  &.inner-nav{
+    background-color: $gray-100-clr ;
+
+     .menu{
+      .main-menu{
+        ul{
+          li> a{
+            color: $black-900;
+          }
+        }
+      }
+     }
   }
 }
 
