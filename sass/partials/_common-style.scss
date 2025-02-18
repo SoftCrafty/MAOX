@@ -27,6 +27,33 @@
     
 }
 
+.heading-title{
+    font-family: $outfit-font;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    color: $black-900;
+    margin-bottom: 15px;
+
+    @include lg{
+        font-size: 38px;
+        line-height: 1.2;
+    }
+    @include md{
+        font-size: 32px;
+    }
+    @include sm{
+        font-size: 30px;
+    }
+    @include xs{
+        font-size: 26px;
+    }
+
+    span{
+        font-weight: 300;
+    }
+}
+
 .read-more-btn{
     font-family: $outfit-font;
     font-size: 15px;
@@ -35,7 +62,7 @@
     line-height: 22px;
     color: black;
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid $gray-200-clr;
     border-radius: 999px;
     margin-top: 10px;
     display: inline-block;
@@ -74,5 +101,8 @@
         i{
             rotate: 0deg;
         }
+    }
+    &.style-4{
+        border-radius: 10px;
     }
 }

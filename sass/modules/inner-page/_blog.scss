@@ -1,0 +1,271 @@
+
+
+.blog-post{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    @include md{
+        margin-bottom: 30px;
+    }
+}
+
+.blog-img{
+
+    position: relative;
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+.blog-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $primary-clr;
+    color: $white;
+    font-family: $outfit-font;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 0;
+
+    @include md{
+        font-size: 18px;
+    }
+    @include sm{
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    @include xs{
+        font-size: 14px;
+    }
+}
+
+.blog-infos{
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    padding: 10px 20px;
+    background-color: $primary-clr;
+    border-radius: 10px 0 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include sm{
+        bottom: -8%;
+        gap: 15px;
+    }
+    @include xs{
+        padding: 5px 10px;
+        bottom: -10%;
+        gap: 10px;
+    }
+
+    .author{
+        font-family: $urbanist-font;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white;
+    }
+}
+
+.pagination-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+    @include md{
+        gap: 15px;
+    }
+    @include sm{
+        gap: 10px;
+    }
+}
+.pagination-item{
+    height: 66px;
+    width: 66px;
+    border-radius: 50%;
+    border: 1px solid $primary-clr;
+    background-color: $gray-200-clr;
+    color: $black-900;
+    font-family: $outfit-font;
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    &.active{
+        background-color: $primary-clr;
+        color: $white;
+    }
+
+    @include md{
+        height: 45px;
+        width: 45px;
+        font-size: 16px;
+    }
+    @include sm{
+        height: 40px;
+        width: 40px;
+    }
+    @include xs{
+        font-size: 14px;
+    }
+}
+
+// blog sidebar ===========
+
+.blog-sidebar{
+    padding: 25px 35px;
+
+    @include lg{
+        padding: 20px;
+    }
+    @include md{
+        padding: 10px;
+    }
+}
+.search-container{
+
+    .input-group{
+        border: 1px solid $gray-200-clr;
+        border-radius: 10px;
+
+        input{
+            outline: 0;
+            border: none;
+            margin-left: 5px;
+
+            &:focus{
+             
+                box-shadow: none;
+            }
+        }
+    }
+    span{
+        background-color: transparent;
+        border: none;
+        color: $primary-clr;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+.category-container{
+    margin-top: 25px;
+}
+.category-item{
+
+    padding: 12px 0;
+    border-bottom: 1px solid $gray-200-clr;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include lg{
+        padding: 8px 0;
+    }
+
+    a{
+        &:hover{
+            color: $primary-clr;
+        }
+    }
+
+    span{
+        height: 45px;
+        width: 45px;
+        border-radius: 100%;
+        border: 1px solid $gray-200-clr;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        @include sm{
+            height: 35px;
+            width: 35px;
+            font-size: 14px;
+        }
+    }
+}
+
+.latest-blog-container{
+    margin-top: 30px;
+}
+
+.latest-blog{
+    padding: 20px;
+    border: 1px solid $gray-200-clr;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+
+    i{
+        color: $primary-clr;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    img{
+        position: absolute;
+        right: 20px;
+        top: -30px;
+        border-radius: 10px;
+    }
+}
+
+.latest-blog-title{
+    font-family: $outfit-font;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    color: $black-900;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+
+    @include lg{
+        font-size: 16px;
+    }
+    @include sm{
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+
+
+    &:hover{
+        color: $primary-clr;
+    }
+}
+
+.tag-container{
+    margin-top: -20px;
+}
+
+.all-tag{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.tag{
+    padding: 5px 10px;
+    border: 1px solid $gray-200-clr;
+    border-radius: 10px;
+
+    &:hover{
+        color: $primary-clr;
+    }
+}

@@ -1,5 +1,13 @@
 
+.faq-section{
+    &.mt-100{
+        margin-top: 100px;
 
+        @include md{
+            margin-top: 50px;
+        }
+    }
+}
 .faq-container{
 
     .accordion-item{
@@ -18,7 +26,7 @@
 
             .accordion-button{
                 color: $black-900;
-                padding: 13px 20px;
+                padding: 13px 60px;
                 
                 &.collapsed{
                     &::before{
@@ -47,7 +55,8 @@
                 }
                 &:before{
                     
-                    // position: absolute;
+                     position: absolute;
+                     left: 20px;
                     content: "\f068";
                     font-family: 
                     "Font Awesome 6 pro";
@@ -65,6 +74,12 @@
 
                     @include sm{
                         font-size: 14px;
+                    }
+
+                    @include xs{
+                        font-size: 12px;
+                        height: 20px;
+                        width: 20px;
                     }
                 }
             }
