@@ -20,28 +20,31 @@
     }
 
 }
-.blog-date{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: $primary-clr;
-    color: $white;
-    font-family: $outfit-font;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    padding: 10px 20px;
-    border-radius: 0 0 10px 0;
 
-    @include md{
-        font-size: 18px;
-    }
-    @include sm{
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-    @include xs{
-        font-size: 14px;
+.inner-blog-section{
+    .blog-date{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary-clr;
+        color: $white;
+        font-family: $outfit-font;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 0;
+    
+        @include md{
+            font-size: 18px;
+        }
+        @include sm{
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+        @include xs{
+            font-size: 14px;
+        }
     }
 }
 

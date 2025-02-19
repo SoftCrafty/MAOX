@@ -8195,11 +8195,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: 25px;
 }
 
-.h1-blog-date i {
+.blog-date i {
   color: #47CD7D;
   font-size: 16px;
 }
-.h1-blog-date span {
+.blog-date span {
   font-family: "Urbanist", serif;
   font-weight: 400;
   font-size: 16px;
@@ -9110,7 +9110,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   object-fit: cover;
 }
 
-.blog-date {
+.inner-blog-section .blog-date {
   position: absolute;
   top: 0;
   left: 0;
@@ -9124,18 +9124,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 0 0 10px 0;
 }
 @media only screen and (max-width: 991px) {
-  .blog-date {
+  .inner-blog-section .blog-date {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .blog-date {
+  .inner-blog-section .blog-date {
     font-size: 16px;
     padding: 5px 10px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .blog-date {
+  .inner-blog-section .blog-date {
     font-size: 14px;
   }
 }
