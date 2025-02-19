@@ -214,6 +214,13 @@ const h2testimonial = new Swiper('.h2-testimonial-swiper', {
   autoplay: true,
   spaceBetween: 40
 });
+//blog-details-testimonial-slider
+const blogDetailsTestimonialSlider = new Swiper('.blog-details-testimonial-slider', {
+  loop: true,
+  freeMode: true,
+  autoplay: true,
+  spaceBetween: 40
+});
 
 
  /* Counter Js ============================*/
