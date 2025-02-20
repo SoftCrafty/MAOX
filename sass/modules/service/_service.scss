@@ -92,6 +92,26 @@
 .service-item-img{
     img{
         border-radius: 20px;
+        transform: scale(0);
+        transition: all 0.3s linear;
+    }
+}
+
+.service-item:hover{
+    .service-item-img{
+        img{
+           
+            transform: scale(1);
+           
+        }
+    }
+
+    .read-more-btn {
+        color: $primary-clr;
+
+        i{
+            rotate: 0deg;
+        }
     }
 }
 

@@ -46,7 +46,6 @@
 
         .menu{
             display: flex;
-            gap: 100px;
             align-items: center;
 
             .main-menu{
@@ -142,6 +141,10 @@
                     padding: 0;
                     margin-right: 30px;
                     position: relative;
+
+                    &:last-child{
+                      margin-right: 0;
+                    }
 
                     @include md{
                         display: block;
@@ -296,6 +299,11 @@
               border-radius: 100%;
               background-color: $primary-clr;
               color: white;
+              display: none;
+
+              @include md{
+                display: block;
+              }
           }
         }
 

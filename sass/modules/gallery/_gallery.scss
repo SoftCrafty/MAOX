@@ -45,11 +45,14 @@
 .gallery-card{
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 
     &-img{
+        overflow: hidden;
         img{
             width: 100%;
             object-fit: cover;
+            transition: all 0.3s ;
         }
     }
     &-title{
@@ -58,6 +61,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -70px;
+        transition: all 0.3s;
 
         @include md{
             padding: 3px 15px;
@@ -76,6 +84,16 @@
         }
         .read-more-btn{
             border: none;
+        }
+    }
+
+    &:hover,
+    &.active{
+        .gallery-card-title{
+            bottom: 0;
+        }
+        img{
+            transform: scale(1.1);
         }
     }
 }

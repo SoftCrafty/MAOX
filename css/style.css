@@ -6107,7 +6107,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-menu-area.style-1 .menu {
   display: flex;
-  gap: 100px;
   align-items: center;
 }
 @media only screen and (max-width: 991px) {
@@ -6196,6 +6195,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 0;
   margin-right: 30px;
   position: relative;
+}
+.header-menu-area.style-1 .menu .main-menu ul li:last-child {
+  margin-right: 0;
 }
 @media only screen and (max-width: 991px) {
   .header-menu-area.style-1 .menu .main-menu ul li {
@@ -6326,6 +6328,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 100%;
   background-color: #47CD7D;
   color: white;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .header-menu-area.style-1 .menu .menu-btn {
+    display: block;
+  }
 }
 .header-menu-area.style-2 {
   background-color: transparent;
@@ -7448,10 +7456,15 @@ body.admin-bar .header-menu-area.sticky_menu {
 .gallery-card {
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
+}
+.gallery-card-img {
+  overflow: hidden;
 }
 .gallery-card-img img {
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s;
 }
 .gallery-card-title {
   background-color: #F2F2F2;
@@ -7459,6 +7472,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -70px;
+  transition: all 0.3s;
 }
 @media only screen and (max-width: 991px) {
   .gallery-card-title {
@@ -7479,6 +7497,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .gallery-card-title .read-more-btn {
   border: none;
+}
+.gallery-card:hover .gallery-card-title, .gallery-card.active .gallery-card-title {
+  bottom: 0;
+}
+.gallery-card:hover img, .gallery-card.active img {
+  transform: scale(1.1);
 }
 
 .gallery-images {
@@ -8091,6 +8115,18 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .service-item-img img {
   border-radius: 20px;
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+
+.service-item:hover .service-item-img img {
+  transform: scale(1);
+}
+.service-item:hover .read-more-btn {
+  color: #47CD7D;
+}
+.service-item:hover .read-more-btn i {
+  rotate: 0deg;
 }
 
 .h2-service {
