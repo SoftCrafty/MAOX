@@ -2,11 +2,13 @@
 
 .footer-area{
     background-color: black;
-    padding-top: 140px;
+    padding-top: 150px;
     position: relative;
 
+    margin-top: 145px;
+
     @include md{
-        margin-top: 50px;
+        margin-top: 75px;
         padding-top: 80px;
     }
    

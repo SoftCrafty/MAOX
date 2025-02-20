@@ -7,6 +7,7 @@
     &.style-2{
         background-color: $white;
         border: 1px solid $gray-200-clr;
+        margin-top: 30px;
 
         h5{
             color: $black-900;
@@ -21,7 +22,7 @@
     background-color: $white;
     padding: 60px;
     box-shadow: rgba(149, 157, 165, 0.18) 0px 6px 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 
     @include sm{
         padding: 30px;
@@ -64,7 +65,7 @@
     color: #031B4E;
     margin-bottom: 20px;
 
-    @include lg{
+    @include lg{                                 
         font-size: 26px;
         line-height: 1.4;
     }
@@ -74,5 +75,13 @@
     }
     @include xs{
         font-size: 20px;
+    }
+}
+
+.faq-section.contact{
+    margin-top: 150px;
+
+    @include md{
+        margin-top: 80px;
     }
 }

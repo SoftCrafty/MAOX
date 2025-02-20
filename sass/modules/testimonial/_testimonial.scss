@@ -1,6 +1,10 @@
 
 .testimonial{
-    margin-top: 45px;
+    margin-top: 130px;
+
+    @include md{
+        margin-top: 65px;
+    }
 }
 .testimonial-wrapper{
     background-color: $bg-clr;

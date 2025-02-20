@@ -99,7 +99,7 @@ const homeSlider = new Swiper('.home-1-blog-slider', {
         spaceBetween: 20,
     },
     1400: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 24,
     }
   },

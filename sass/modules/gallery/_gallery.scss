@@ -1,8 +1,10 @@
 // gallery style i
 
 .gallery-section{
+    margin-top: 145px;
+
     @include md{
-        margin-top: 55px;
+        margin-top: 80px;
     }
     .section-heading-wrapper{
         .section-heading{

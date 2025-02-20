@@ -21,15 +21,26 @@
 
 .trusted-clients{
 
-    margin-top: 100px;
-
-    &.mt-240{
-        margin-top: 240px;
-    }
+    margin-top: 150px;
 
     @include md{
-        margin-top: 50px;
+        margin-top: 80px;
     }
+
+    &.mt-325{
+        margin-top: 325px;
+
+        @include xl{
+            margin-top: 275px;
+        }
+        @include lg{
+            margin-top: 210px;
+        }
+        @include md{
+            margin-top: 180px;
+        }
+    }
+
 
     &.style-2{
 

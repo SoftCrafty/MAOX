@@ -1,12 +1,15 @@
 
 // Let's Talk section
 .lets-talk-section{
+
+    margin-top: 150px;
+
     @include md{
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
 .lets-talk{
-    padding: 100px 0;
+    padding: 120px 0;
     background-color: black;
     z-index: 5;
     background-image: url('/images/lets-talk/vector.png');

@@ -1,7 +1,10 @@
 
 .about-us{
+
+    margin-top: 150px;
+
     @include md{
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
 .awards{

@@ -1,7 +1,10 @@
 // blog section and blog item card
 .blog-section{
+
+    margin-top: 150px;
+
     @include md{
-        margin-top: 55px;
+        margin-top: 80px;
     }
 
     &.style-2{

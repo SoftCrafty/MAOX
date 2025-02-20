@@ -82,7 +82,7 @@
     &.style-2{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 50px 0;
+        margin: 100px 0 50px;
 
         @include md{
             grid-template-columns: 1fr;
