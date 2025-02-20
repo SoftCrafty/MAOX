@@ -157,6 +157,7 @@
         font-size: 16px;
         line-height: 24px;
         color: white;
+        margin-bottom: 0;
 
         @include md{
             font-size: 14px;
@@ -169,6 +170,7 @@
     ul{
         display: flex;
         gap: 40px;
+        margin-bottom: 0;
 
         @include md{
             gap: 15px;
@@ -220,7 +222,7 @@
 .footer-area.style-2{
 
     margin-top: -200px;
-    padding-top: 210px;
+    padding-top: 240px;
 
     @include md{
         margin-top: -120px;

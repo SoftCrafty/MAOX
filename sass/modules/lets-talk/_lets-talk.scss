@@ -77,13 +77,18 @@
 
 .lets-talk-section{
     &.style-2{
-        margin-top: 50px;
+        margin-top: 140px;
         position: relative;
         z-index: 5;
+
+        @include md{
+            margin-top: 70px;
+        }
+
         .lets-talk{
             background-image: none;
             background-color: $primary-clr;
-            padding: 80px;
+            padding: 50px 80px;
             display: flex;
             align-items: center;
             justify-content: space-between;

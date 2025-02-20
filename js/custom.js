@@ -170,7 +170,7 @@ const h2blog = new Swiper('.home-2-blog-slider', {
         spaceBetween: 20,
     },
     1400: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 24,
     }
   },
@@ -201,7 +201,7 @@ const h2service = new Swiper('.h2-swiper-sevice-wrapper', {
         spaceBetween: 20,
     },
     1400: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 24,
     }
   },

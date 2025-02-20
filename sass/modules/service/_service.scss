@@ -97,8 +97,11 @@
 
 // home 2 service section ====================
 .h2-service{
+
+    margin-top: 150px;
+
     @include md{
-        margin-top: 55px;
+        margin-top: 80px;
     }
 }
 

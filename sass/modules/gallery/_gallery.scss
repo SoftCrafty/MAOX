@@ -101,9 +101,12 @@
 // home 2 gallery section ====================
 
 .gallery{
+
     &.style-2{
+        margin-top: 150px;
+
         @include md{
-            margin-top: 50px;
+            margin-top: 80px;
         }
     }
 }

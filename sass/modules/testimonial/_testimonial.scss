@@ -142,7 +142,7 @@
 
 .h2-testimonial-wrapper{
 
-    margin-top: -100px;
+    margin-top: -230px;
     position: relative;
 
     @include xxs{
@@ -170,17 +170,18 @@
         border-radius: 10px;
         position: absolute;
         left: 200px;
-        bottom: 60px;
+        bottom: 160px;
 
         @include lg{
             padding: 25px 30px;
             left: 140px;
-            bottom: 50px;
+            bottom: 80px;
         }
 
         @include md{
             max-width: 480px;
             left: 50px;
+            bottom: 50px;
         }
         @include sm{
             position: relative;
