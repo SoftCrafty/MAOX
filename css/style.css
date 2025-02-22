@@ -6091,6 +6091,18 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #ffffff;
 }
 
+.sticky-logo {
+  display: none;
+}
+
+.sticky .sticky-logo {
+  display: inline-block;
+}
+
+.sticky .standard-logo {
+  display: none;
+}
+
 .header-menu-area {
   position: relative;
   z-index: 9999;
@@ -6151,23 +6163,12 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
   align-items: center;
   color: #000000;
-  margin-right: 70px;
   cursor: pointer;
   height: 30px;
   width: 30px;
   border: 1px solid #47CD7D;
   border-radius: 10px;
   transition: all 0.3s linear;
-}
-@media only screen and (max-width: 767px) {
-  .header-menu-area.style-1 .menu .main-menu .close-btn {
-    margin-right: 90px;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .header-menu-area.style-1 .menu .main-menu .close-btn {
-    margin-right: 120px;
-  }
 }
 .header-menu-area.style-1 .menu .main-menu .close-btn:hover {
   background-color: #47CD7D;
@@ -6465,6 +6466,22 @@ body.admin-bar .header-menu-area.sticky_menu {
     gap: 10px;
     justify-content: center;
   }
+}
+.banner-section.style-1 .banner-content .banner-round-desc figure .play-btn {
+  height: 35px;
+  width: 35px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #47CD7D;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 .banner-section.style-1 .banner-content .banner-round-desc .banner-round-text {
   font-family: "Outfit", serif;

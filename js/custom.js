@@ -228,7 +228,11 @@ const blogDetailsTestimonialSlider = new Swiper('.blog-details-testimonial-slide
           delay: 10,
           time: 1500,
         });
+// veno box video player
 
+new VenoBox({
+  selector: '.my-video-links',
+});
 
 
 

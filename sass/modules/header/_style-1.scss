@@ -11,7 +11,7 @@
 }
 
 .sticky .header-menu-area{
-  //padding-top: 18px;
+  
   position: fixed;
   z-index: 9999;
   right: 0;
@@ -25,6 +25,17 @@
     background-color: $white;
     
   }
+}
+
+.sticky-logo{
+  display: none;
+}
+
+.sticky .sticky-logo{
+  display: inline-block;
+}
+.sticky .standard-logo{
+  display: none;
 }
 
 .header-menu-area{
@@ -98,7 +109,6 @@
                   justify-content: center;
                   align-items: center;
                   color: $black-900;
-                  margin-right: 70px;
                   cursor: pointer;
                   height: 30px;
                   width: 30px;
@@ -106,12 +116,6 @@
                   border-radius: 10px;
                   transition: all 0.3s linear;
 
-                  @include sm{
-                    margin-right: 90px;
-                  }
-                  @include xxs{
-                    margin-right: 120px;
-                  }
 
                   &:hover{
                     background-color: $primary-clr;
