@@ -7560,6 +7560,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .h2-gallery-item-title {
   position: absolute;
+  z-index: 2;
 }
 .h2-gallery-item-title p {
   font-family: "Outfit", serif;
@@ -7639,10 +7640,22 @@ body.admin-bar .header-menu-area.sticky_menu {
     right: 14px;
   }
 }
+.h2-gallery-item-img {
+  overflow: hidden;
+}
 .h2-gallery-item-img img {
-  max-width: 85%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  transition: all 0.3s;
+}
+.h2-gallery-item-img img:hover {
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 1399px) {
+  .h2-gallery-item-img img {
+    max-width: 85%;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .h2-gallery-item-img img {
@@ -8270,6 +8283,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   padding: 5px 20px;
   border-radius: 10px;
   background-color: #47CD7D;
+  cursor: default;
 }
 @media only screen and (max-width: 1199px) {
   .blog-item-img button {
@@ -8482,7 +8496,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
   border-top: 1px solid rgba(204, 204, 204, 0.3607843137);
 }
 @media only screen and (max-width: 767px) {
@@ -8549,7 +8563,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .vector.vector-2 {
   right: -40px;
-  bottom: -40px;
+  bottom: 0px;
 }
 
 .footer-area.style-2 {
