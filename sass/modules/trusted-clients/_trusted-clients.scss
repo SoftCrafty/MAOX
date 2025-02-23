@@ -39,6 +39,10 @@
         @include md{
             margin-top: 180px;
         }
+
+        @include sm{
+            margin-top: 145px;
+        }
     }
 
 

@@ -18,7 +18,7 @@
   left: 0;
   top: 0;
   animation: sticy-menu 1s;
- // animation-direction: inherited;
+  animation-direction: inherited;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
 
@@ -32,6 +32,13 @@
   &.style-2{
     background-color: $white;
     
+    .menu{
+      .main-menu{
+        .menu-right{
+          margin-left: 30px;
+        }
+      }
+    }
   }
 }
 
@@ -139,9 +146,7 @@
                 ul{
 
                     @include md{
-                      margin-top: 10px;
-                      margin-left: 20px;
-
+                      padding: 20px;
                     }
 
                     margin: 0;
@@ -160,6 +165,8 @@
 
                     @include md{
                         display: block;
+                        margin-right: 0;
+                        margin-bottom: 12px;
                     }
 
                     &.active{
@@ -208,6 +215,10 @@
                               min-width: 210px;
                               line-height: 2.7;
                               transition: 0.3s all linear;
+
+                              @include md{
+                                line-height: 1.7;
+                              }
 
                               &:hover{
                                 padding-left: 10px;
@@ -279,12 +290,10 @@
                             line-height: 0;
                             visibility: hidden;
 
-                            @include md{
-                                right: 30px;
-                            }
-                            @include sm{
-                              display: none;
-                            }
+                            // @include md{
+                            //     right: 30px;
+                            // }
+                            
                         }
                         &:hover{
                             color: $primary-clr;

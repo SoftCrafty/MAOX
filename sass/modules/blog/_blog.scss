@@ -9,6 +9,9 @@
 
     &.style-2{
 
+        @include md{
+            margin-top: 25px;
+        }
       
         .blog-item{
             padding: 0;
