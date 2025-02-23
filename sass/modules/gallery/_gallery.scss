@@ -23,9 +23,7 @@
     @include md{
         margin-left: 0;
     }
-    @include xs{
-        margin-left: 30px;
-    }
+    
 
     p{
         font-family: $outfit-font;
@@ -57,18 +55,18 @@
     }
     &-title{
         background-color: $bg-clr;
-        padding:3px 30px;
+        padding:15px 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -70px;
+        bottom: -90px;
         transition: all 0.3s;
 
         @include md{
-            padding: 3px 15px;
+            padding: 12px 15px;
         }
 
         h5{
@@ -135,10 +133,10 @@
     position: relative;
 
     &.item-2{
-        margin: 65px 0;
+        margin: 100px 0;
 
         @include md{
-            margin: 30px 0;
+            margin: 60px 0;
         }
     }
 

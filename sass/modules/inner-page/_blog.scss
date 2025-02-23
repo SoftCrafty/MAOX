@@ -8,6 +8,16 @@
     @include md{
         margin-bottom: 30px;
     }
+
+    .section-heading-wrapper{
+        margin-top: 45px;
+
+        .section-heading{
+            h2{
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .blog-img{

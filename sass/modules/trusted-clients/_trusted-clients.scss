@@ -9,16 +9,24 @@
             row-gap: 30px;
         }
         @include xs{
-            row-gap: 20px;
+            row-gap: 25px;
         }
         @include xxs{
-            row-gap: 15px;
+            row-gap: 20px;
         }
+
+        
     }
     .client{
         text-align: center;
     }
+.toggle-client{
+    display: none;
 
+    @include xs{
+        display: block;
+    }
+}
 .trusted-clients{
 
     margin-top: 150px;
@@ -28,20 +36,23 @@
     }
 
     &.mt-325{
-        margin-top: 325px;
+        margin-top: 275px;
 
         @include xl{
-            margin-top: 275px;
+            margin-top: 225px;
         }
         @include lg{
-            margin-top: 210px;
+            margin-top: 160px;
         }
         @include md{
-            margin-top: 180px;
+            margin-top: 155px;
         }
 
         @include sm{
-            margin-top: 145px;
+            margin-top: 100px;
+        }
+        @include xs{
+            margin-top: 150px;
         }
     }
 

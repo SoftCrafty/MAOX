@@ -32,6 +32,14 @@
         @include xs{
             margin-left: 50px;
         }
+
+        .sec-title-wrapper{
+            overflow: visible;
+
+            .sec-title{
+                overflow: visible;
+            }
+        }
     }
 
     .breadcrupm-title{

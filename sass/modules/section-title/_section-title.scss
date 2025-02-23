@@ -18,8 +18,12 @@
         margin-top: 130px;
     }
 }
+.sec-title-wrapper{
+    overflow: hidden;
+}
 .sec-title{
     text-transform: uppercase;
+    overflow: hidden;
    
     &.style-1{
         
@@ -55,22 +59,19 @@
                 content: '';
                 position: absolute;
                 top: 50%;
-                left: 100%;
+                left: 105%;
                 height: 1px;
-                width: 100%;
+                width: 240%;
                 background-color: #E2E2E2;
 
-                @include sm{
-                    width: 85%;
-                }
             }
             &::before{
                 content: '';
                 position: absolute;
                 top: 50%;
-                right: 100%;
+                right: 105%;
                 height: 1px;
-                width: 100%;
+                width: 240%;
                 background-color: #E2E2E2;
 
                 @include sm{
