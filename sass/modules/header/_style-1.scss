@@ -18,8 +18,16 @@
   left: 0;
   top: 0;
   animation: sticy-menu 1s;
-  animation-direction: inherited;
+ // animation-direction: inherited;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+
+  &.style-1{
+    .header-menu-wrapper{
+      border-bottom: none;
+    }
+    
+  }
 
   &.style-2{
     background-color: $white;
