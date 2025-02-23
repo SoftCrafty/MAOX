@@ -225,7 +225,7 @@
                                 padding: 5px 10px ;
                                }
                                @include xxs{
-                                font-size: 12px;
+                                font-size: 13px;
                                }
                               }
                               &:last-child a {
@@ -344,6 +344,21 @@
     }
   }
 
+  .toggle-btn{
+    @include md{
+      display: none;
+    }
+  }
+  .res-toggle-btn{
+    display: none;
+
+    @include md{
+      display: inline-block;
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+  }
+
   &.inner-nav{
     background-color: $gray-100-clr ;
 
@@ -359,29 +374,3 @@
   }
 }
 
-// .header-area {
-//   &.style-2{
-//     .header-menu-area{
-      
-//         background-color: white;
-    
-//         .menu{
-//           .main-menu {
-//             ul{
-//               li{
-//                 a{
-//                   color: black;
-//                 }
-//               }
-//             }
-//           }
-    
-//           .menu-right{
-    
-//           }
-    
-//         }
-      
-//     }
-//   }
-// }

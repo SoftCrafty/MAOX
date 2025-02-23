@@ -6266,7 +6266,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (max-width: 479px) {
   .header-menu-area.style-1 .menu .main-menu ul li.dropdown ul li a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 .header-menu-area.style-1 .menu .main-menu ul li.dropdown ul li:last-child a {
@@ -6353,6 +6353,21 @@ body.admin-bar .header-menu-area.sticky_menu {
 @media only screen and (max-width: 991px) {
   .header-menu-area.style-2 .menu .menu-right .menu-btn {
     display: inline-block;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header-menu-area .toggle-btn {
+    display: none;
+  }
+}
+.header-menu-area .res-toggle-btn {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .header-menu-area .res-toggle-btn {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
   }
 }
 .header-menu-area.inner-nav {
@@ -6467,6 +6482,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     justify-content: center;
   }
 }
+.banner-section.style-1 .banner-content .banner-round-desc figure {
+  display: inline-block;
+}
 .banner-section.style-1 .banner-content .banner-round-desc figure .play-btn {
   height: 35px;
   width: 35px;
@@ -6482,6 +6500,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+}
+.banner-section.style-1 .banner-content .banner-round-desc figure .rotation {
+  animation: rotation 6s linear infinite;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 .banner-section.style-1 .banner-content .banner-round-desc .banner-round-text {
   font-family: "Outfit", serif;
