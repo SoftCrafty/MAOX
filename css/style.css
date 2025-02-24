@@ -8672,6 +8672,9 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding-top: 60px;
   }
 }
+.footer-area.style-2 .footer-widget-contact .address {
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 991px) {
   .footer-area.style-2 .footer-widget-contact .address {
     text-align: center;
@@ -8971,6 +8974,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 2.2;
   color: #000000;
 }
+.services-list.for-mb {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .services-list.for-mb {
+    margin-bottom: 25px;
+  }
+}
 
 .service-list-title {
   font-family: "Outfit", serif;
@@ -9016,7 +9027,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #47CD7D;
   color: #ffffff;
 }
-.service-list-container .service-list-item:hover h4 {
+.service-list-container .service-list-item:hover h4 a {
   color: #ffffff;
 }
 .service-list-container .service-list-item h4 {
@@ -9026,6 +9037,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 30px;
   color: #595959;
   transition: all 0.3s;
+}
+.service-list-container .service-list-item h4 a {
+  color: #595959;
 }
 @media only screen and (max-width: 1199px) {
   .service-list-container .service-list-item h4 {
@@ -9353,6 +9367,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-img img {
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s;
+}
+.blog-img img:hover {
+  transform: scale(1.1);
 }
 
 .inner-blog-section .blog-date,

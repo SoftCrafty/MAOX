@@ -99,6 +99,14 @@
         line-height: 2.2;
         color: $black-900;
     }
+
+    &.for-mb{
+        margin-bottom: 0;
+
+        @include md{
+            margin-bottom: 25px;
+        }
+    }
 }
 
 .service-list-title{
@@ -143,7 +151,9 @@
             color: $white;
 
             h4{
-                color: $white;
+                a{
+                    color: $white;
+                }
             }
         }
 
@@ -155,6 +165,9 @@
             color: $gray-text-clr;
             transition: all 0.3s;
 
+            a{
+                color: $gray-text-clr;
+            }
             @include lg{
                 font-size: 18px;
             }
