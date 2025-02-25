@@ -60,7 +60,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid $gray-200-clr;
+            
             padding: 30px 0;
         }
 
@@ -232,6 +232,7 @@
                                 border-bottom: 1px solid $gray-200;
                                 margin-left: 0;
                                 font-size: 16px;
+                                display: block;
                       
                                @include sm{
                                 font-size: 14px;

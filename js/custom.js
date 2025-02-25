@@ -222,6 +222,7 @@
           delay: 10,
           time: 1500,
         });
+
   // veno box video player
 
   new VenoBox({
@@ -231,7 +232,11 @@
     /*
     //         Jquery Wow Js
     //         ============================*/
-    //     new WOW().init();
+
+     document.addEventListener("DOMContentLoaded", function () {
+    new WOW().init();
+});
+ 
 
     //     /*
 

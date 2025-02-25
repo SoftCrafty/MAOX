@@ -6117,7 +6117,6 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #CCCCCC;
   padding: 30px 0;
 }
 .header-menu-area.style-1 .menu {
@@ -6266,6 +6265,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-bottom: 1px solid #E3E3E3;
   margin-left: 0;
   font-size: 16px;
+  display: block;
 }
 @media only screen and (max-width: 767px) {
   .header-menu-area.style-1 .menu .main-menu ul li.dropdown ul li a {
@@ -6657,7 +6657,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .banner-section.style-2 .banner-content .banner-title {
   font-family: "Outfit", serif;
   font-weight: 700;
-  font-size: 90;
+  font-size: 90px;
   line-height: 100px;
   color: #000000;
 }
@@ -8288,7 +8288,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
 }
 .h2-service-item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 .h2-service-item:hover .h2-service-item-img img {
   transform: scale(1.1);
@@ -8314,10 +8314,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .blog-section.style-2 .blog-item {
   padding: 0;
   overflow: hidden;
-  box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(99, 99, 99, 0.05) 0px 1px 2px 0px;
 }
 .blog-section.style-2 .blog-item:hover {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
 }
 .blog-section.style-2 .blog-item-img {
   overflow: hidden;
@@ -8344,7 +8344,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   border-radius: 10px;
   margin-bottom: 10px;
   margin-right: 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px;
   transition: all 0.4s linear 0s;
 }
 .blog-item-img {
@@ -8381,7 +8381,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .blog-item:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 20px 0px;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 5px 20px 0px;
 }
 .blog-item:hover img {
   transform: scale(1.1);
