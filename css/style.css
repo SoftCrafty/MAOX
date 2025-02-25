@@ -7437,6 +7437,11 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-top: -230px;
   position: relative;
 }
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .h2-testimonial-wrapper {
+    margin-top: -130px;
+  }
+}
 @media only screen and (max-width: 479px) {
   .h2-testimonial-wrapper {
     margin-top: -60px;
@@ -7474,6 +7479,12 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding: 25px 30px;
     left: 140px;
     bottom: 80px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .h2-testimonial-wrapper .testimonial-card {
+    bottom: 50px;
+    left: 120px;
   }
 }
 @media only screen and (max-width: 991px) {

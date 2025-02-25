@@ -157,6 +157,9 @@
     margin-top: -230px;
     position: relative;
 
+    @include nesthub(){
+        margin-top: -130px;
+    }
     @include xxs{
         margin-top: -60px;
     }
@@ -188,6 +191,11 @@
             padding: 25px 30px;
             left: 140px;
             bottom: 80px;
+        }
+
+        @include nesthub{
+            bottom: 50px;
+            left: 120px;
         }
 
         @include md{
