@@ -12,7 +12,7 @@
 
 .sticky .header-menu-area{
   
-  position: fixed;
+  position: fixed !important;
   z-index: 9999;
   right: 0;
   left: 0;
@@ -157,6 +157,7 @@
                       margin-right: 0;
                     }
 
+
                     @include md{
                         display: block;
                         margin-right: 0;
@@ -273,21 +274,15 @@
                             position: absolute;
                             content: "\f107";
                             font-family: $font-awesome;
-                            //transform: rotate(45deg);
-                            //border: solid $white;
-                            //border-width: 0 2px 2px 0;
                             display: inline-block;
                             padding: 3px;
-                            //margin-top: -5px;
                             font-size: 14px;
                             top: 50%;
                             right: 6px;
                             line-height: 0;
                             visibility: hidden;
 
-                            // @include md{
-                            //     right: 30px;
-                            // }
+                           
                             
                         }
                         &:hover{
@@ -338,6 +333,10 @@
 
         ul{
           li{
+
+            @include lg{
+              margin-right: 15px;
+            }
             a{
               color: black;
             }
@@ -351,6 +350,9 @@
             @include md{
               display: inline-block;
             }
+          }
+          .read-more-btn{
+            margin-top: 0 !important;
           }
       }
 

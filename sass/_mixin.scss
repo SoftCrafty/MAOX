@@ -190,6 +190,7 @@
 }
 
 
+
 //transition
 @mixin transition{
   transition: all 0.5s ease-out;
@@ -197,21 +198,21 @@
 
 
  
+ 
+  // html, body{
    
-  html, body{
-   
-    @include nesthub(){
-      width: 100%;
-      overflow-x: hidden;
-    }
+  //   @include nesthub(){
+  //     width: 100%;
+  //     overflow-x: hidden;
+  //   }
 
-      @include nesthubmax(){
+  //     @include nesthubmax(){
         
-        width: 100%;
-       overflow-x: hidden;
+  //       width: 100%;
+  //      overflow-x: hidden;
   
-      }
+  //     }
     
-  }
+  // }
 
  

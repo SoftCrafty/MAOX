@@ -43,19 +43,6 @@ Footer
 
 ===========================*/
 /* Theme Default CSS */
-@media only screen and (min-width: 992px) and (max-width: 1024px) {
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
-@media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  html, body {
-    width: 100%;
-    overflow-x: hidden;
-  }
-}
-
 * {
   margin: 0;
   border: 0;
@@ -6091,7 +6078,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .sticky .header-menu-area {
-  position: fixed;
+  position: fixed !important;
   z-index: 9999;
   right: 0;
   left: 0;
@@ -6355,6 +6342,11 @@ body.admin-bar .header-menu-area.sticky_menu {
     background-color: #ffffff;
   }
 }
+@media only screen and (max-width: 1199px) {
+  .header-menu-area.style-2 .menu .main-menu ul li {
+    margin-right: 15px;
+  }
+}
 .header-menu-area.style-2 .menu .main-menu ul li a {
   color: black;
 }
@@ -6365,6 +6357,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   .header-menu-area.style-2 .menu .menu-right .menu-btn {
     display: inline-block;
   }
+}
+.header-menu-area.style-2 .menu .menu-right .read-more-btn {
+  margin-top: 0 !important;
 }
 @media only screen and (max-width: 991px) {
   .header-menu-area .toggle-btn {
