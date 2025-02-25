@@ -178,7 +178,7 @@
 
 // Custom Max Width
 @mixin rmaxwd($screen) {
-  @media (max-width: $screen+'px') {
+  @media (max-width: $screen + 'px') {
     @content;
   }
 }
@@ -194,3 +194,24 @@
 @mixin transition{
   transition: all 0.5s ease-out;
 }
+
+
+ 
+   
+  html, body{
+   
+    @include nesthub(){
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+      @include nesthubmax(){
+        
+        width: 100%;
+       overflow-x: hidden;
+  
+      }
+    
+  }
+
+ 
