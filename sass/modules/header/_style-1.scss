@@ -63,6 +63,7 @@
             
             padding: 30px 0;
         }
+        
 
         .menu{
             display: flex;
@@ -174,9 +175,7 @@
                                 line-height: 1.7;
                               }
 
-                              &:hover{
-                                padding-left: 10px;
-                              }
+                              
                       
                               ul {
                                 visibility: hidden;
@@ -193,7 +192,10 @@
                                 margin-left: 0;
                                 font-size: 16px;
                                 display: block;
-                      
+
+                                &:hover{
+                                  padding-left: 30px;
+                                }
                                @include sm{
                                 font-size: 14px;
                                 padding: 5px 10px ;
@@ -354,6 +356,14 @@
   
     .menu-right{
       margin-left: 30px;
+
+      .menu-btn{
+        margin-left: 70px;
+
+        @include lg{
+          margin-left: 40px;
+        }
+      }
     }
   
 }
@@ -365,7 +375,6 @@
   align-items: center;
   padding: 20px;
   border-bottom: 1px solid $primary-clr;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   &.show-md{
     display: none;
@@ -498,4 +507,6 @@
       color: $primary-clr;
     }
   }
+
 }
+  

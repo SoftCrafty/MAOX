@@ -1,7 +1,7 @@
 
 .about-us{
 
-    margin-top: 150px;
+    margin-top: 145px;
 
     @include md{
         margin-top: 80px;
@@ -95,6 +95,7 @@
 .about-us{
     &.style-2{
         .abt-img{
+            
             height: 100%;
             img{
                 width: 100%;
@@ -107,5 +108,7 @@
                 margin-bottom: 20px;
             }
         }
+
+       
     }
 }

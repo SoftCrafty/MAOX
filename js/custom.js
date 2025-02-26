@@ -1,5 +1,12 @@
 (function ($) {
   "use strict";
+
+  var windowOn = $(window);
+
+  windowOn.on('load', function () {
+    wowAnimation();
+  });
+
   $(document).ready(function () {
 
    
@@ -30,12 +37,14 @@
         $(".main-menu").addClass("show");
         $(".sidebar").addClass("show");
     
-        // Only remove 'sticky' class if screen width is ≤ 991px
-          if ($(window).width() <= 991) {
-            $("body").removeClass("sticky");
-          }else{
-            $("body").addClass("sticky");
-          }
+        if ($(window).width() <= 991 && $(window).scrollTop() > 100) {
+          $("body").removeClass("sticky");
+      } else if ($(window).scrollTop() > 100) {
+          $("body").addClass("sticky");
+      } else {
+          $("body").removeClass("sticky"); // Remove sticky when scrollTop is 0
+      }
+      
         // Remove 'sticky' class when menu is shown
        // $("body").removeClass("sticky");
       });
@@ -109,10 +118,12 @@
         }
       },
     });
+    
     const slideCarousel = new Swiper('.slide-carousel-wrapper', {
       loop: true, 
       autoplay: {
         delay: 0,
+        disableOnInteraction: false,
     },
       freeMode: true,
       spaceBetween: 15,
@@ -148,7 +159,26 @@
         }
       },
     });
+    // Variable to track manual stopping
+      let isPaused = false;
 
+      // Pause on hover
+      $(".slide-carousel-wrapper").hover(
+        function () {
+            slideCarousel.autoplay.stop();
+            isPaused = true;
+        },
+        function () {
+            isPaused = false;
+            // Restart autoplay with a small delay to prevent issues
+            setTimeout(() => {
+                if (!isPaused) slideCarousel.autoplay.start();
+            }, 500); // Small delay ensures smooth restart
+        }
+      );
+
+
+      
     // home 2 blog slider
     const h2blog = new Swiper('.home-2-blog-slider', {
       loop: true, 
@@ -244,9 +274,20 @@
     //         Jquery Wow Js
     //         ============================*/
 
-    new WOW().init();
-   
- 
+    
+    
   });
+
+  // WOW Animation
+function wowAnimation() {
+  var wow = new WOW({
+    boxClass: 'wow',
+    animateClass: 'animated',
+    offset: 0,
+    mobile: false,
+    live: true,
+  });
+  wow.init();
+}
 
 })(jQuery);
