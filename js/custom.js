@@ -1,12 +1,6 @@
 (function ($) {
   "use strict";
 
-  var windowOn = $(window);
-
-  windowOn.on('load', function () {
-    wowAnimation();
-  });
-
   $(document).ready(function () {
 
    
@@ -178,7 +172,7 @@
       );
 
 
-      
+
     // home 2 blog slider
     const h2blog = new Swiper('.home-2-blog-slider', {
       loop: true, 
@@ -274,20 +268,13 @@
     //         Jquery Wow Js
     //         ============================*/
 
+              // WOW Animation
+            
+              new WOW().init();
     
     
   });
 
-  // WOW Animation
-function wowAnimation() {
-  var wow = new WOW({
-    boxClass: 'wow',
-    animateClass: 'animated',
-    offset: 0,
-    mobile: false,
-    live: true,
-  });
-  wow.init();
-}
+
 
 })(jQuery);
