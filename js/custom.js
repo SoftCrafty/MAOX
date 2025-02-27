@@ -70,7 +70,7 @@
 
       $('.testimonial-authors-slider').slick({
         centerMode: true,
-        centerPadding: '0px',
+        centerPadding: '4px',
         slidesToShow: 3,
         focusOnSelect: true, 
         slidesToScroll: 1,

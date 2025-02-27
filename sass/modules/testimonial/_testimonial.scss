@@ -127,15 +127,15 @@
     justify-content: center; 
     align-items: center;
     gap: 10px;
-    width: 160px;
+    width: 150px;
     margin: 0 auto; 
     position: relative;
     overflow: hidden;
 }
 
 .testimonial-author-img {
-    height: 50px;
-    width: 50px;
+    height: 43px;
+    width: 43px;
     border-radius: 100%;
     border: 2px solid transparent; 
     overflow: hidden;
@@ -147,14 +147,17 @@
 
   .testimonial-authors-slider .slick-center {
     border: 2px solid $primary-clr !important;
-    width: 47px !important;
-    height: 47px;
+    width: 43px !important;
+    height: 43px;
     display: flex;
     justify-content: center;
     align-items: center;
 
   }
-
+  .testimonial-authors-slider .slick-active{
+    width: 43px !important;
+  }
+  
 // home -2 testimonial ====================
 
 .h2-testimonial-wrapper{
